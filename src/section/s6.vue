@@ -18,10 +18,40 @@
           fitwel認證由美國CDC與聯邦總務署GSA聯合推動，綜整超過 5,600件文獻、訂定70個以上評估項目，達到「健康人居，世界共享」的理想。
         </p>
         <ul class="pic_box">
-          <li v-for="(item, i) in json" :key="i" data-aos="fade-up" :data-aos-delay="300 * i">
-            <img :src="`/src/section/s6/${i + 1}.svg`" />
-            <span>{{ item.ch }}</span>
-            <span class="is_en">{{ item.en }}</span>
+          <li data-aos="fade-up" data-aos-delay="0">
+            <img src="./s6/1.svg" />
+            <span>{{ json[0].ch }}</span>
+            <span class="is_en">{{ json[0].en }}</span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="300">
+            <img src="./s6/2.svg" />
+            <span>{{ json[1].ch }}</span>
+            <span class="is_en">{{ json[1].en }}</span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="600">
+            <img src="./s6/3.svg" />
+            <span>{{ json[2].ch }}</span>
+            <span class="is_en">{{ json[2].en }}</span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="900">
+            <img src="./s6/4.svg" />
+            <span>{{ json[3].ch }}</span>
+            <span class="is_en">{{ json[3].en }}</span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="1200">
+            <img src="./s6/5.svg" />
+            <span>{{ json[4].ch }}</span>
+            <span class="is_en">{{ json[4].en }}</span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="1500">
+            <img src="./s6/6.svg" />
+            <span>{{ json[5].ch }}</span>
+            <span class="is_en">{{ json[5].en }}</span>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="1800">
+            <img src="./s6/7.svg" />
+            <span>{{ json[6].ch }}</span>
+            <span class="is_en">{{ json[6].en }}</span>
           </li>
         </ul>
       </div>

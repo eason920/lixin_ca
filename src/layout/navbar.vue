@@ -1,7 +1,16 @@
 <template>
   <ul v-if="!isMobile" class="nav">
-    <li v-for="(item, i) in info.navList" :key="`nav${i}`" @click="fnListActive(i, item)">
-      <img :src="`../src/section/public/${i + 1}.svg`" />
+    <li @click="fnListActive(0, info.navList[0])">
+      <img src="../section/public/1.svg" />
+    </li>
+    <li @click="fnListActive(1, info.navList[1])">
+      <img src="../section/public/2.svg" />
+    </li>
+    <li @click="fnListActive(2, info.navList[2])">
+      <img src="../section/public/3.svg" />
+    </li>
+    <li @click="fnListActive(3, info.navList[3])">
+      <img src="../section/public/4.svg" />
     </li>
   </ul>
 
@@ -19,7 +28,7 @@ $p:.7vw
   bottom: 5vw
   background:
     image: repeating-linear-gradient(to right, rgba(0,129,253,100%),  rgba(11,154,244,30%) 100%)
-  z-index: 11
+  z-index: 21
   padding: $p
   width:3.8vw
   border-radius: $p * 2.2 0 0 $p * 2.2

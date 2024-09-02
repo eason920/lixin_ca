@@ -16,7 +16,11 @@
         <img class="pic_logo" src="./s7/logo_ca.svg" data-aos="fade-up" data-aos-delay="500" />
 
         <div class="pic_box">
-          <img v-for="i in 5" :key="i" :src="`/src/section/s7/${i}.png`" data-aos="fade-up" :data-aos-delay="300 * i" />
+          <img src="./s7/1.png" data-aos="fade-up" data-aos-delay="0" />
+          <img src="./s7/2.png" data-aos="fade-up" data-aos-delay="300" />
+          <img src="./s7/3.png" data-aos="fade-up" data-aos-delay="600" />
+          <img src="./s7/4.png" data-aos="fade-up" data-aos-delay="900" />
+          <img src="./s7/5.png" data-aos="fade-up" data-aos-delay="1200" />
         </div>
       </div>
     </div>

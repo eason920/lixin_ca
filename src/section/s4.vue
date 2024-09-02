@@ -15,7 +15,7 @@
 
     <div class="txt_box">
       <img data-aos="fade-up" src="./s4/title.svg" data-aos-delay="300" />
-      <hr :props-color="'52, 168, 222'" class="hr" />
+      <HR :props-color="'52, 168, 222'" class="hr" />
       <p data-aos="fade-up" data-aos-delay="300">
         理性務實家都知道：看不見的更重要！建築如同人體，養成先天好體質，就不必日後苦當藥罐子，便能健康快活。
         <br /><br />
