@@ -15,8 +15,8 @@
 
     <div class="txt_box">
       <img data-aos="fade-up" src="./s4/title.svg" data-aos-delay="300" />
-      <HR :props-color="'52, 168, 222'" class="hr" />
-      <p>
+      <hr :props-color="'52, 168, 222'" class="hr" />
+      <p data-aos="fade-up" data-aos-delay="300">
         理性務實家都知道：看不見的更重要！建築如同人體，養成先天好體質，就不必日後苦當藥罐子，便能健康快活。
         <br /><br />
         透過美國fitwel健康建築認證，加上瑞士SGS建物生產履歷，讓您的建築具備好基因，更有全透明的健檢報告。
@@ -32,7 +32,7 @@
   height: 60vw
   position: relative
   background:
-    image: url("./s4/bg.png")
+    image: url("./s4/bg.jpg")
     repeat: no-repeat
     size: cover
     position: center 0
@@ -71,9 +71,9 @@ p
 
 @media screen and (max-width: $bp)
   .s4
-    height: 96vh
+    height: 185vw
     background:
-      image: url("./s4/bg_m.png")
+      image: url("./s4/bg_m.jpg")
       size: contain
   .horizon
     width: 80%

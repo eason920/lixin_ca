@@ -1,11 +1,11 @@
 <template>
   <!--  -->
-  <div class="house" v-if="info.houseInfos.length > 0">
+  <div class="house z-20 relative" v-if="info.houseInfos.length > 0">
     <img src="../footer/title.png" />
     <img v-if="!isMobile" src="../public/logo_build.png" />
   </div>
 
-  <div class="footer flex items-center justify-center w-full h-[40px] bg-[#302626]">
+  <div class="footer relative z-20 flex items-center justify-center w-full h-[40px] bg-[#302626]">
     <a href="https://www.lixin.com.tw/" target="_blank"><img class="hover:opacity-50" src="//h65.tw/img/footerLogo.gif"
             alt="立炘數位" srcset=""></a>
     <a href="https://www.h65.tw/admin/test/login" target="_blank" class="text-white text-xs">網頁製作</a>
@@ -21,7 +21,7 @@
 
 .house {
   color: #FFF;
-  background: {
+  background: #FFF {
     image: url("../footer/bg.png");
     position: center 0;
     size: 95% auto;

@@ -4,12 +4,12 @@
 
     <div class="main">
       <div class="main_pic">
-        <img src="./s5/pic.png">
+        <img src="./s5/pic.jpg">
         <span>情境示意圖</span>
       </div>
       <div class="main_msg">
         <img class="pic_title" data-aos="fade-up" src="./s5/title.svg" data-aos-delay="100" />
-        <p>
+        <p data-aos="fade-up" data-aos-delay="300">
           SGS集團為世界上測試、驗證、檢驗服務的領導者，透過全方位的建物認證，確保建物的安全性與合規性。住戶更可獲得「建物生產履歷報告書」，全面掌握家的所有數值。
         </p>
         <div class="pic_box">
@@ -47,6 +47,8 @@ img
   transform: translateX(-50%)
   top: 30px
   z-index: 1
+  opacity: .6
+  mix-blend-mode: multiply
 
 .main
   display: flex
@@ -107,6 +109,9 @@ $g: 12%
   .horizon
     width: 96%
     top: 20px
+    mix-blend-mode: screen
+    opacity: 1
+    filter: brightness(0) invert(1)
 
   .main
     flex-direction: column
@@ -117,7 +122,7 @@ $g: 12%
 
   .main_msg
     width: 100%
-    padding: 5vw 15vw 18vw
+    padding: 5vw 15vw 8vw
     background:
       image: url("./public/bg_m.png")
       size: contain

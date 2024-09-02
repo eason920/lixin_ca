@@ -3,6 +3,7 @@
     <div class="ani_bg">
       <img v-for="i in 7" :key="i" src="./s1/bg_ani.png">
     </div>
+    <div class="ani_bottom"></div>
     <div class="ani_gray"></div>
 
     <div class="title_box">
@@ -19,6 +20,7 @@
     <div class="logo_build">
       <img src="./public/logo_build.png" data-aos="fade-up" data-aos-delay="1500">
     </div>
+  <!--  <div class="bbb"></div>  -->
   </article>
 </template>
 
@@ -26,15 +28,29 @@
 @import @/assets/style/public.sass
 .s1
   height: 100vh
+  min-height: 46.875vw
+  max-height: 56.25vw
   position: relative
+  .bbb
+    background: #0009
+    user-select: none
+    pointer-events: none
+    position: fixed
+    width: 100%
+    height: 100%
+    z-index: 100
+    top: 0
+    left: 0
+    mix-blend-mode: saturation
+
   img
     width: 100%
 
 // --
 .title_box
   @extend %left_center
-  z-index: 10
-  top: 12vh
+  z-index: 15
+  top: 12%
   width: 38vw
 
 .title_box_main
@@ -43,8 +59,8 @@
 // --
 .logo_box
   @extend %left_center
-  top: 49vh
-  z-index: 10
+  top: calc(50% - 3vw)
+  z-index: 15
   width: 23vw 
 
 .logo_main
@@ -61,21 +77,45 @@
 // --
 .logo_build
   @extend %left_center
-  z-index: 10
+  z-index: 15
   width: 200px
-  bottom: 5vh
+  bottom: 5%
 
 // animate
 @keyframes an
-  to
+  50%
+    opacity: 1
+    transform: scale(2.6)
+    z-index: 5
+  60%
+    opacity: .7
+    transform: scale(2.25)
+    z-index: 6
+  95%
     opacity: .5
-    transform: scale(.9)
+    transform: scale(1)
+    z-index: 9
+  100%
+    opacity: 0
+    transform: scale(1)
     z-index: 10
 
 @keyframes an_m
-  to
+  50%
+    opacity: 1
+    transform: scale(2.2,2.6)
+    z-index: 5
+  60%
     opacity: .7
-    transform: scale(1.3, 2.3)
+    transform: scale(1.95,2.25)
+    z-index: 6
+  95%
+    opacity: .5
+    transform: scale(1)
+    z-index: 9
+  100%
+    opacity: 0
+    transform: scale(1)
     z-index: 10
   
 .ani_bg
@@ -87,7 +127,7 @@
   img
     position: absolute
     width: 66%
-    top: 10vw
+    top: calc(50% - 23.2vw)
     left: 17%
     opacity: 1
     transform-style: preserve-3d
@@ -95,29 +135,40 @@
     transform-origin: 50% 51%
     z-index: 1
 
-    animation: an 7s linear reverse infinite
+    animation: an 9.1s linear reverse infinite
 
     &:nth-child(1)
       animation-delay: 0s
 
     &:nth-child(2)
-      animation-delay: 1s
+      animation-delay: 1.3s
 
     &:nth-child(3)
-      animation-delay: 2s
+      animation-delay: 2.6s
 
     &:nth-child(4)
-      animation-delay: 3s
+      animation-delay: 3.9s
 
     &:nth-child(5)
-      animation-delay: 4s
+      animation-delay: 5.2s
 
     &:nth-child(6)
-      animation-delay: 5s
+      animation-delay: 6.5s
 
     &:nth-child(7)
-      animation-delay: 6s
+      animation-delay: 7.8s
        
+.ani_bottom
+  user-select: none
+  pointer-events: none
+  position: absolute
+  width: 100%
+  height: 15%
+  bottom: 0
+  left: 0
+  z-index: 11
+  background: linear-gradient(to top, #00A4EA77 0%,#00A4EA22 30%,#00A4EA00 100%)
+
 .ani_gray
   background: url("./s1/bg_gray.png") repeat
   background-size: auto
@@ -127,33 +178,37 @@
   position: absolute
   width: 100%
   height: 100%
-  z-index: 10
+  z-index: 12
   top: 0
   left: 0
 
 @media screen and (max-width: $bp)
   .s1
-    height: calc( 100vh - 72px)
+    // height: calc( 100vh - 72px)
+    height: calc(100vh - 63px)
+    min-height: 161.0666666667vw
+    max-height: 200vw
   .title_box
-    top: 14vh
+    top: calc(30% - 29vw)
     width: 73vw
 
   .title_box_main
     margin-bottom: 4vw
 
   .logo_box
-    top: 34vh
+    top: calc(50% - 16vw)
     width: 70vw 
 
   .logo_build
     width: 30vw
     bottom: auto
-    top: 59vh
+    top: calc(60% + 15vw)
 
   .ani_bg img
-    top: auto
-    bottom: 0
-    transform-origin: 50% 100%
-    transform: scale(5, 6)
-    animation: an_m 7s linear reverse infinite
+    top: calc(50% - 70vw)
+    width: 110%
+    height: 170vw
+    left: -5%
+    transform: scale(6,5)
+    animation: an_m 9.1s linear reverse infinite
 </style>

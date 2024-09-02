@@ -1,5 +1,11 @@
 <template>
   <div id="order" class="order relative text-center">
+    <div class="ani_bg">
+      <img v-for="i in 7" :key="i" src="./s1/bg_ani.png">
+    </div>
+    <div class="ani_bottom"></div>
+    <div class="ani_gray"></div>
+
     <div class="order-section">
       <!-- Title -->
       <div class="title_box">
@@ -139,14 +145,115 @@
 
 <style lang="sass">
 @import "@/assets/style/function.scss"
+// animate
+@keyframes an
+  50%
+    opacity: 1
+    transform: scale(2.6)
+    z-index: 5
+  60%
+    opacity: .7
+    transform: scale(2.25)
+    z-index: 6
+  95%
+    opacity: .5
+    transform: scale(1)
+    z-index: 9
+  100%
+    opacity: 0
+    transform: scale(1)
+    z-index: 10
 
+@keyframes an_m
+  50%
+    opacity: 1
+    transform: scale(2.2,2.6)
+    z-index: 5
+  60%
+    opacity: .7
+    transform: scale(1.95,2.25)
+    z-index: 6
+  95%
+    opacity: .5
+    transform: scale(1)
+    z-index: 9
+  100%
+    opacity: 0
+    transform: scale(1)
+    z-index: 10
+  
+.ani_bg
+  position: absolute
+  width: 100%
+  height: calc(100% - 26vw)
+  overflow: hidden
+  top: 0
+  left: 0
+  img
+    position: absolute
+    width: 66%
+    top: calc(50% - 23.2vw)
+    left: 17%
+    opacity: 1
+    transform-style: preserve-3d
+    transform: scale(5)
+    transform-origin: 50% 51%
+    z-index: 1
+
+    animation: an 9.1s linear reverse infinite
+
+    &:nth-child(1)
+      animation-delay: 0s
+
+    &:nth-child(2)
+      animation-delay: 1.3s
+
+    &:nth-child(3)
+      animation-delay: 2.6s
+
+    &:nth-child(4)
+      animation-delay: 3.9s
+
+    &:nth-child(5)
+      animation-delay: 5.2s
+
+    &:nth-child(6)
+      animation-delay: 6.5s
+
+    &:nth-child(7)
+      animation-delay: 7.8s
+       
+.ani_bottom
+  user-select: none
+  pointer-events: none
+  position: absolute
+  width: 100%
+  height: 15%
+  bottom: 0
+  left: 0
+  z-index: 11
+  background: linear-gradient(to top, #00A4EA77 0%,#00A4EA22 30%,#00A4EA00 100%)
+
+.ani_gray
+  background: url("./s1/bg_gray.png") repeat
+  background-size: auto
+  opacity: 0.8
+  user-select: none
+  pointer-events: none
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 12
+  top: 0
+  left: 0
 .order-section 
   position: relative
   // padding-top: size(406)
   overflow: hidden
   min-height: size(500)
+  z-index: 50
   background:
-    image: url("./form/bg.png")
+    // image: url("./form/bg.png")
     size: contain
   //  background: linear-gradient(180deg, #418DBD 0%, #000A39 100%)
 
@@ -158,6 +265,7 @@
     vertical-align: middle
 
 .order 
+  position: relative
   width: 100%
   padding-top: 0
   font-size: size(15)
@@ -193,13 +301,14 @@
   $w: 1200
   .form 
     width: size($w - $gap)
-    min-width: 680px
+    min-width: 800px
     //  height: 350px
     gap: size($gap)
     margin-top: size(45)
     margin-bottom: size(50)
     z-index: 50
     align-items: stretch
+    font-size: calc(12px + #{size(3)})
 
     .left 
       flex: 1
@@ -220,7 +329,7 @@
       // position: absolute
     
     .row
-      background: rgba(255,255,255, .85)
+      background: rgba(255,255,255, .5)
       border: 1px solid #000
       color: #000
       display: flex
@@ -234,11 +343,11 @@
         padding-left:1em 
         font-weight: bold
         > span
-          // color: #F00
-          font-size:1.5em
+          color: #F00
+          font-size:1em
       
       input,select
-        background: inherit
+        background: none
         flex: 1
         font-size: inherit
         &:focus
@@ -258,9 +367,10 @@
     display: flex
     justify-content: space-between
     align-items: center
-    width: 62vw
+    width: size($w - $gap)
+    min-width: 800px
     margin: 0 auto
-    height: 48px
+    height: 72px
 
     .policy
       width: 30%
@@ -268,7 +378,7 @@
     .recaptcha
       width: 30%
       height: 100%
-      transform: translateY(-15px)
+      transform: translateY(0)
 
   $blue: #172589
   .send 
@@ -287,7 +397,7 @@
     position: relative
 
   .control 
-    font-size: size(16)
+    font-size: calc(12px + #{size(4)})
     color: #000
     position: relative
 
@@ -382,7 +492,8 @@
       justify-content: space-between
       align-items: center
       // margin: 0 auto
-      width: 82vw
+      width: sizem(310)
+      min-width: 0
       height: auto
 
       .policy
@@ -401,12 +512,12 @@
       height: sizem(72)
 
     .control 
-      font-size: sizem(14.6)
+      font-size: sizem(14)
 
   // --------------
   .order-section 
     background:
-      image: url("./form/bg_m.png")
+      // image: url("./form/bg_m.png")
       size: cover
 
   .img_title
@@ -426,6 +537,14 @@
   .img_contact
     width: 30vw
     margin-bottom: 5vw
+    
+  .ani_bg img
+    top: 0vw
+    width: 110%
+    height: 400vw
+    left: -5%
+    transform: scale(6,5)
+    animation: an_m 9.1s linear reverse infinite
 </style>
 
 <script setup>

@@ -5,14 +5,14 @@
 
     <div class="main">
       <div class="main_pic">
-        <img src="./s6/pic.png">
+        <img src="./s6/pic.jpg">
         <span>情境示意圖</span>
         <img v-if="!isMobile" class="is_float" src="./s6/pic_float.svg" />
       </div>
       <div class="main_msg">
         <img v-if="isMobile" class="is_bg" src="./public/bg_m.png" />
         <img class="pic_title" data-aos="fade-up" src="./s6/title.svg" data-aos-delay="100" />
-        <p>
+        <p data-aos="fade-up" data-aos-delay="300">
           一個健康的居住環境，不該只是疊加建材與設備，城安透過遵循美國fitwel認證的嚴謹指標，作為選地與規劃方向，讓建築具備健康宅基因。
           <br /><br />
           fitwel認證由美國CDC與聯邦總務署GSA聯合推動，綜整超過 5,600件文獻、訂定70個以上評估項目，達到「健康人居，世界共享」的理想。
@@ -60,6 +60,8 @@ img
   transform: translateX(-50%)
   top: 30px
   z-index: 2
+  opacity: .6
+  mix-blend-mode: multiply
 
 .main
   display: flex
@@ -137,6 +139,9 @@ $g: 4.5vw
   .horizon
     width: 80%
     top: 20px
+    mix-blend-mode: screen
+    opacity: 1
+    filter: brightness(0) invert(1)
 
   .main
     flex-direction: column

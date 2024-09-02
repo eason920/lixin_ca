@@ -4,16 +4,16 @@
 
     <div class="main">
       <div class="main_pic">
-        <img src="./s7/pic.png">
+        <img src="./s7/pic.jpg">
         <span>情境示意圖</span>
       </div>
       <div class="main_msg">
         <img class="pic_title" data-aos="fade-up" src="./s7/title.svg" data-aos-delay="100" />
-        <p>
+        <p data-aos="fade-up" data-aos-delay="300" >
           SGS集團為世界上測試、驗證、檢驗服務的領導者，透過全方位的建物認證，確保建物的安全性與合規性。住戶更可獲得「建物生產履歷報告書」，全面掌握家的所有數值。
         </p>
 
-        <img class="pic_logo" src="./s7/logo_ca.svg" />
+        <img class="pic_logo" src="./s7/logo_ca.svg" data-aos="fade-up" data-aos-delay="500" />
 
         <div class="pic_box">
           <img v-for="i in 5" :key="i" :src="`/src/section/s7/${i}.png`" data-aos="fade-up" :data-aos-delay="300 * i" />
