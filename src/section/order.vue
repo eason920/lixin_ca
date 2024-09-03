@@ -1,8 +1,5 @@
 <template>
   <div id="order" class="order relative text-center">
-    <div class="ani_bg">
-      <img v-for="i in 7" :key="i" src="./s1/bg_ani.png">
-    </div>
 
     <div class="order-section">
       <!-- Title -->
@@ -143,117 +140,13 @@
 
 <style lang="sass">
 @import "@/assets/style/function.scss"
-// animate
-@keyframes an
-  50%
-    opacity: 1
-    transform: scale(2.6)
-    z-index: 5
-  60%
-    opacity: .7
-    transform: scale(2.25)
-    z-index: 6
-  95%
-    opacity: .5
-    transform: scale(1)
-    z-index: 9
-  100%
-    opacity: 0
-    transform: scale(1)
-    z-index: 10
 
-@keyframes an_m
-  50%
-    opacity: 1
-    transform: scale(2.2,2.6)
-    z-index: 5
-  60%
-    opacity: .7
-    transform: scale(1.95,2.25)
-    z-index: 6
-  95%
-    opacity: .5
-    transform: scale(1)
-    z-index: 9
-  100%
-    opacity: 0
-    transform: scale(1)
-    z-index: 10
-  
-.ani_bg
-  position: absolute
-  width: 100%
-  height: calc(100% - 26vw)
-  overflow: hidden
-  top: 0
-  left: 0
-  img
-    position: absolute
-    width: 66%
-    top: calc(50% - 23.2vw)
-    left: 17%
-    opacity: 1
-    transform-style: preserve-3d
-    transform: scale(5)
-    transform-origin: 50% 51%
-    z-index: 1
-
-    animation: an 9.1s linear reverse infinite
-
-    &:nth-child(1)
-      animation-delay: 0s
-
-    &:nth-child(2)
-      animation-delay: 1.3s
-
-    &:nth-child(3)
-      animation-delay: 2.6s
-
-    &:nth-child(4)
-      animation-delay: 3.9s
-
-    &:nth-child(5)
-      animation-delay: 5.2s
-
-    &:nth-child(6)
-      animation-delay: 6.5s
-
-    &:nth-child(7)
-      animation-delay: 7.8s
-       
-.ani_bottom
-  user-select: none
-  pointer-events: none
-  position: absolute
-  width: 100%
-  height: 15%
-  bottom: 0
-  left: 0
-  z-index: 11
-  background: linear-gradient(to top, #00A4EA77 0%,#00A4EA22 30%,#00A4EA00 100%)
-
-.ani_gray
-  background: url("./s1/bg_gray.png") repeat
-  background-size: auto
-  opacity: 0.8
-  user-select: none
-  pointer-events: none
-  position: absolute
-  width: 100%
-  height: 100%
-  z-index: 12
-  top: 0
-  left: 0
 .order-section 
   position: relative
   // padding-top: size(406)
   overflow: hidden
   min-height: size(500)
   z-index: 50
-  background:
-    // image: url("./form/bg.png")
-    size: contain
-  //  background: linear-gradient(180deg, #418DBD 0%, #000A39 100%)
 
   .bg-image 
     position: absolute
@@ -267,7 +160,9 @@
   width: 100%
   padding-top: 0
   font-size: size(15)
-  //background: #195c45
+  background:
+    image: url("./form/bg.webp")
+    size: 100% auto
   
   .order-title 
     font-size: size(40)
@@ -438,9 +333,8 @@
     width: 100%
     padding-bottom: sizem(63)
     font-size: sizem(14)
-    // border-radius: sizem(68) sizem(68) 0 0
-    // padding-top: sizem(0)
-    // margin-top: sizem(0)
+    background:
+      image: url("./form/bg_m.webp")
 
     .order-title-img 
       width: sizem(315)
