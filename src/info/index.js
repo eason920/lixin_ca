@@ -14,8 +14,8 @@ export default {
     googleSrc: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3678.489826005084!2d120.289203!3d22.784307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQ3JzAzLjUiTiAxMjDCsDE3JzIxLjEiRQ!5e0!3m2!1szh-TW!2stw!4v1721979864766!5m2!1szh-TW!2stw",
     googleLink: "https://maps.app.goo.gl/cbM7qbAZhsW1cQXJ9",
     phone: "06-337-6688",
-    fbLink: "https://www.facebook.com/61562121533694/",
-    fbMessage: "https://m.me/61562121533694/",
+    fbLink: "https://www.facebook.com//",
+    fbMessage: "https://m.me//",
     caseName: caseName,
     houseInfos: [
         ["投資興建", "升鴻水電工程股份有限公司"],
@@ -30,7 +30,7 @@ export default {
         ["行銷企劃", "自售"],
         */
     ],
-    gtmCode: ["GTM-WPMCT7FB"], // 可放置多個
+    gtmCode: ["GTM-NFZM5443"], // 可放置多個
     recaptcha_site_key_v2: "6LdbrqAmAAAAAPj2D_6cBbflea1livK9Uud4FGmN", //主3
     //recaptcha_site_key_v2: "6Lep-78UAAAAAMaZLtddpvpixEb8cqu7v7758gLz", //主1
     //recaptcha_site_key_v2: "6LfGUjEaAAAAANYvhZQx5imGm23pRt0V-rOvkpNC", //主2
