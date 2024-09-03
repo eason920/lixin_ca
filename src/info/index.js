@@ -1,4 +1,4 @@
-const caseName = "一功青"
+const caseName = "明日新城安"
 
 const address = "台南市善化區自由路13號旁"
 
@@ -11,18 +11,19 @@ export default {
     address1: "",//按鈕區的--- 如空白會只呈現地址
     address2: "",//map點下確認的--- 如空白會顯示"導航地址"
     address,
-    googleSrc: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3678.489826005084!2d120.289203!3d22.784307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQ3JzAzLjUiTiAxMjDCsDE3JzIxLjEiRQ!5e0!3m2!1szh-TW!2stw!4v1721979864766!5m2!1szh-TW!2stw",
-    googleLink: "https://maps.app.goo.gl/cbM7qbAZhsW1cQXJ9",
+    googleSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.0820330432202!2d120.29125809999998!3d23.130676599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7b87298f2c5f%3A0x578cc4c607972931!2zNzQx5Y-w5Y2X5biC5ZaE5YyW5Y2A6Ieq55Sx6LevMTPomZ8!5e0!3m2!1szh-TW!2stw!4v1725351489378!5m2!1szh-TW!2stw",
+    googleLink: "https://maps.app.goo.gl/XUg2howqTbUxdnKY8",
     phone: "06-337-6688",
     fbLink: "https://www.facebook.com//",
     fbMessage: "https://m.me//",
     caseName: caseName,
     houseInfos: [
+        /*,
         ["投資興建", "升鴻水電工程股份有限公司"],
         ["建築設計", "弘憲聯合建築師事務所"],
         ["企劃銷售", "上旺開發股份有限公司"],
         ["接待中心", address],
-        /*,
+        
         ["建照號碼", "(111)桃市都建執照字第會德00701-02號"],
         ["經紀人", "(91)北市經證字第00692號 陳子瑞"], 
         ["建築設計", "弘憲聯合建築師事務所"],
