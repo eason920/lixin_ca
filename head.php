@@ -2,7 +2,7 @@
 // $src = $_SERVER['SERVER_NAME'];
 // $case_code = substr($src, 0, -7); // 砍掉後面七個字 .h35.tw -h35.tw
 $src = $_SERVER['SERVER_NAME'];
-$case_code = "yikung";
+$case_code = "newera";
 $pdo = new pdo('mysql:host=localhost;dbname=htw12_web', 'htw12', '3hdaiU813Q');
 $pdo->exec("SET NAMES 'utf8'");
 $sql = "SELECT title,description,keyword,p0 FROM susers WHERE email = '" . $case_code . "'";
