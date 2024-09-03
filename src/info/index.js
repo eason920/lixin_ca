@@ -1,4 +1,4 @@
-const caseName = "明日新城安"
+const caseName = "城安明日新宣言"
 
 const address = "台南市善化區自由路13號旁"
 
