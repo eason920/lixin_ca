@@ -31,18 +31,7 @@
   min-height: 46.875vw
   max-height: 56.25vw
   position: relative
-  .bbb
-    background: #0009
-    user-select: none
-    pointer-events: none
-    position: fixed
-    width: 100%
-    height: 100%
-    z-index: 100
-    top: 0
-    left: 0
-    mix-blend-mode: saturation
-
+  background: #f8f8f8
   img
     width: 100%
 
@@ -172,10 +161,10 @@
 .ani_gray
   background: url("./s1/bg_gray.png") repeat
   background-size: auto
-  opacity: 0.8
+  opacity: 0.5
   user-select: none
   pointer-events: none
-  position: absolute
+  position: fixed
   width: 100%
   height: 100%
   z-index: 12

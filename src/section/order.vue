@@ -3,8 +3,6 @@
     <div class="ani_bg">
       <img v-for="i in 7" :key="i" src="./s1/bg_ani.png">
     </div>
-    <div class="ani_bottom"></div>
-    <div class="ani_gray"></div>
 
     <div class="order-section">
       <!-- Title -->

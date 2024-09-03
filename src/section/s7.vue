@@ -1,5 +1,6 @@
 <template>
   <article class="s7">
+    <div class="bg"><span></span></div>
     <img v-if="!isMobile" class="horizon" src="./s7/horizon.svg" />
 
     <div class="main">
@@ -33,12 +34,29 @@
 .s7
   height: 60vw
   position: relative
-  background:
-    image: url("./public/bg.png")
-    repeat: no-repeat
-    size: cover
-    position: center 0
-    color: #f9f9f9
+.bg
+  position: absolute
+  top: 0
+  width: 100%
+  &::before
+    content: ""
+    display: block
+    width: 100%
+    height: 5vw
+    background: linear-gradient(90deg, rgba(0, 192, 255, 0.66) 0%, rgba(0, 166, 255, 0.37) 25%, rgba(0, 136, 255, 0.20) 49.76%, rgba(0, 136, 255, 0.00) 90%)
+  span
+    width: 100%
+    display: block
+    height: 4.6vw
+    background: linear-gradient(90deg, rgba(0, 153, 255, 0.66) 0%, rgba(0, 144, 255, 0.42) 19.76%, rgba(0, 136, 255, 0.23) 45.1%, rgba(0, 136, 255, 0.00) 90%)
+
+  &::after
+    content: ""
+    width: 100%
+    display: block
+    height: 7.7vw
+    background: linear-gradient(90deg, rgba(0, 119, 238, 0.52) 0%, rgba(0, 126, 245, 0.29) 26.26%, rgba(0, 133, 252, 0.10) 58.76%, rgba(0, 136, 255, 0.00) 93.26%)
+
 
 img
   width: 100%
@@ -50,13 +68,15 @@ img
   left: 50%
   transform: translateX(-50%)
   top: 30px
-  z-index: 1
+  z-index: 15
 
 .main
+  position: relative
   display: flex
   height: 80%
   width: 100%
   padding-top: 10%
+  z-index: 15
 
 .main_pic
   width: 50%
@@ -87,6 +107,7 @@ p
   width: 130%
   left: 50%
   transform: translateX(-50%)
+  z-index: 15
   img
     width: calc(20% - 5px)
     margin-bottom: 10px
@@ -95,6 +116,15 @@ p
   .s7
     height: auto
     background: none
+  .bg
+    top: 76vw
+    transform: scaleX(-1)
+    &::before
+      display: none
+    span
+      height: 9vw
+    &::after
+      height: 15.5vw
 
   .main
     flex-direction: column
@@ -106,11 +136,6 @@ p
   .main_msg
     width: 100%
     padding: 5vw 15vw 16vw
-    background:
-      image: url("./public/bg_m.png")
-      size: contain
-      repeat: no-repeat
-      color: #f9f9f9
   p
     font-size: $fs_m
     margin-top: 7vw

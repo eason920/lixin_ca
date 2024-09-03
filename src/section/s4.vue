@@ -32,11 +32,11 @@
   height: 60vw
   position: relative
   background:
-    image: url("./s4/bg.jpg")
+    //image: url("./s4/bg.jpg")
     repeat: no-repeat
     size: cover
     position: center 0
-    color: #f9f9f9
+    // color: #f9f9f9
 
 img
   width: 100%
@@ -46,12 +46,24 @@ img
   width: 46%
   left: 27%
   top: 30px
+  mix-blend-mode: multiply
 
 .logo_box
   position: absolute
-  width: 46%
-  left: 27%
-  top: 14.5vw
+  width: 100%
+  left: 0%
+  top: 0
+  text-align: center
+  img
+    width: 46%
+  .overflow-hidden
+    &:nth-child(1)
+      padding-top: 14.5vw
+      background: radial-gradient(60% 92% at 50% 100%, #0069E5 0%, rgba(0, 105, 229, 0.00) 100%)
+    &:nth-child(2)
+      background: linear-gradient(175deg, rgba(0, 117, 255, 0.50) 0%, rgba(0, 153, 255, 0.20) 14.54%, rgba(0, 153, 255, 0.00) 47.65%)
+      padding-bottom: 15vw
+
 .shadow
   transform: rotateX(-180deg) scale(1, .5)
   transform-origin: 0 34%
@@ -62,6 +74,7 @@ img
   width: 32%
   left: 34%
   top: 30vw
+  z-index: 15
 
 .hr
   margin: 2vw 0
@@ -72,17 +85,19 @@ p
 @media screen and (max-width: $bp)
   .s4
     height: 185vw
-    background:
-      image: url("./s4/bg_m.jpg")
-      size: contain
   .horizon
-    width: 80%
-    left: 10%
-
-  .logo_box
     width: 90%
     left: 5%
-    top: 45vw
+
+  .logo_box
+    img
+      width: 90%
+    .overflow-hidden
+      &:nth-child(1)
+        padding-top: 45vw
+        background: radial-gradient(80% 92% at 50% 100%, #0069E5 0%, rgba(0, 105, 229, 0.00) 100%)
+      &:nth-child(2)
+        padding-bottom: 30vw
 
   .txt_box
     width: 80%

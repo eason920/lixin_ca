@@ -21,7 +21,7 @@ export default defineConfig({
     viteImagemin({
       filter: (source) => {
         // 排除特定的圖片，例如 "exclude.png"
-        return !source.endsWith('bg_ani.png');
+        return !source.includes('bg_ani');
       },
       gifsicle: {
         optimizationLevel: 7,

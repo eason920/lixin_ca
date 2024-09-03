@@ -1,8 +1,7 @@
 <template>
   <article class="s6">
-    <img v-if="!isMobile" class="is_bg" src="./public/bg.png" />
+    <div class="bg"><span></span></div>
     <img class="horizon" src="./s6/horizon.svg" />
-
     <div class="main">
       <div class="main_pic">
         <img src="./s6/pic.jpg">
@@ -10,7 +9,6 @@
         <img v-if="!isMobile" class="is_float" src="./s6/pic_float.svg" />
       </div>
       <div class="main_msg">
-        <img v-if="isMobile" class="is_bg" src="./public/bg_m.png" />
         <img class="pic_title" data-aos="fade-up" src="./s6/title.svg" data-aos-delay="100" />
         <p data-aos="fade-up" data-aos-delay="300">
           一個健康的居住環境，不該只是疊加建材與設備，城安透過遵循美國fitwel認證的嚴謹指標，作為選地與規劃方向，讓建築具備健康宅基因。
@@ -65,23 +63,34 @@
 .s6
   height: 60vw
   position: relative
-  background:
-    // image: url("./s6/bg.png")
-    repeat: no-repeat
-    size: cover
-    position: center 0
-    color: #f9f9f9
+  
+.bg
+  position: absolute
+  top: 0
+  width: 100%
+  transform: scaleX(-1)
+  &::before
+    content: ""
+    display: block
+    width: 100%
+    height: 5vw
+    background: linear-gradient(90deg, rgba(0, 192, 255, 0.66) 0%, rgba(0, 166, 255, 0.37) 25%, rgba(0, 136, 255, 0.20) 49.76%, rgba(0, 136, 255, 0.00) 90%)
+  span
+    width: 100%
+    display: block
+    height: 4.6vw
+    background: linear-gradient(90deg, rgba(0, 153, 255, 0.66) 0%, rgba(0, 144, 255, 0.42) 19.76%, rgba(0, 136, 255, 0.23) 45.1%, rgba(0, 136, 255, 0.00) 90%)
+
+  &::after
+    content: ""
+    width: 100%
+    display: block
+    height: 7.7vw
+    background: linear-gradient(90deg, rgba(0, 119, 238, 0.52) 0%, rgba(0, 126, 245, 0.29) 26.26%, rgba(0, 133, 252, 0.10) 58.76%, rgba(0, 136, 255, 0.00) 93.26%)
 
 img
   width: 100%
   margin: 0
-
-.is_bg
-  position: absolute
-  top: 0
-  left: 0
-  transform: rotateY(180deg)
-  width: 100%
 
 .horizon
   position: absolute
@@ -89,15 +98,17 @@ img
   left: 50%
   transform: translateX(-50%)
   top: 30px
-  z-index: 2
+  z-index: 15
   opacity: .6
   mix-blend-mode: multiply
 
 .main
+  position: relative
   display: flex
   height: 78%
   width: 100%
   padding-top: 9vw
+  z-index: 15
 
 .main_pic
   order: 2
@@ -165,6 +176,15 @@ $g: 4.5vw
   .s6
     height: auto
     background: none
+  .bg
+    top: 76vw
+    transform: scaleX(1)
+    &::before
+      display: none
+    span
+      height: 9vw
+    &::after
+      height: 15.5vw
 
   .horizon
     width: 80%
@@ -187,11 +207,6 @@ $g: 4.5vw
     z-index: 1
     width: 100%
     padding: 5vw 15vw 18vw
-    background:
-      // image: url("./s6/bg_m.png")
-      size: contain
-      repeat: no-repeat
-      color: #f9f9f9
   p
     font-size: $fs_m
     margin-top: 11vw

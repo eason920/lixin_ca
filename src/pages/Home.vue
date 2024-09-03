@@ -10,7 +10,7 @@
   </div>
   <!--loading end-->
   <Nav v-if="info.navList.length > 0" />
-  <div class="home overflow-hidden font-['Noto_Sans_TC',sans-serif] bg-[#fff]">
+  <div class="home overflow-hidden font-['Noto_Sans_TC',sans-serif]">
     <S1 />
     <S4 />
     <S5 />
@@ -25,7 +25,8 @@
 @import '@/assets/style/function.scss';
 
 body {
-  background: #f8f8f8;
+  background: #f8f8f8 url("@/section/s4/bg.png") fixed;
+  background-size: auto;
 }
 
 @keyframes an1 {
