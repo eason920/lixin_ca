@@ -19,6 +19,10 @@ export default defineConfig({
   plugins: [
     vue(),
     viteImagemin({
+      filter: (source) => {
+        // 排除特定的圖片，例如 "exclude.png"
+        return !source.endsWith('bg_ani.png');
+      },
       gifsicle: {
         optimizationLevel: 7,
         interlaced: false,

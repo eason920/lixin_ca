@@ -30,7 +30,7 @@
   height: 60vw
   position: relative
   background:
-    image: url("./public/bg.png")
+    image: url("./public/bg.jpg")
     repeat: no-repeat
     size: cover
     position: center 0
@@ -124,7 +124,7 @@ $g: 12%
     width: 100%
     padding: 5vw 15vw 8vw
     background:
-      image: url("./public/bg_m.png")
+      image: url("./public/bg_m.jpg")
       size: contain
       repeat: no-repeat
       color: #f9f9f9
