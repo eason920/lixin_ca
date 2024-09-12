@@ -105,7 +105,6 @@ img
   display: flex
   justify-content: center
   padding-top: 2vw
-  .hr
     
 .logo_box
   // padding-top: 1vw
