@@ -1,24 +1,20 @@
 <template>
-<article class="s2">
+<article class="s3">
   <div class="memo">情境示意圖</div>
   
-  <img class="horizon" src="./s2/horizon.svg" />
+  <img class="horizon" src="./s3/horizon.svg" />
 
   <div class="title_box">
-    <img src="./s2/title.svg" data-aos="fade-up" data-aos-duration="600" />
+    <img src="./s3/title.svg" data-aos="fade-up" data-aos-duration="600" />
   </div>
 
   <div class="hr_box" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
     <HR class="hr" :props-color="sHrColor" />
   </div>
 
-  <div class="logo_box">
-    <img src="./s2/logo.png" data-aos="fade-in" data-aos-duration="3000" data-aos-delay="700" />
-  </div>
-  
   <div v-if="bShow" class="svg_box">
-    <svgPc v-if="!isMobile" class="svg" />
-    <img v-else src="./s2/svg_mb.svg" />
+    <img v-if="!isMobile" src="./s3/svg.svg" />
+    <img v-else src="./s3/svg_mb.svg" />
   </div>
   
 </article>
@@ -28,49 +24,27 @@
 import { onMounted, onUnmounted, ref, nextTick, computed, getCurrentInstance } from 'vue';
 
 // cpn
-import svgPc from './s2/svg.vue';
 import HR from './public/hr.vue';
 
 const globals = getCurrentInstance().appContext.config.globalProperties;
 const isMobile = computed(() => globals.$isMobile());
 
-const bShow = ref(false);
+const bShow = ref(true);
 const sHrColor = ref(
   !isMobile 
   ? '140,140,140' 
   : '255,255,255'
 );
 
-const fnScroll = () => {
-  const st = window.scrollY;
-  console.log('window.scrollY', st);
-  if (st > 500) {
-    if (!bShow.value) {
-      nextTick();
-      bShow.value = true;
-    }
-  } else {
-    bShow.value = false;
-  }
-};
-
-
-onMounted(() => {
-  window.addEventListener('scroll', fnScroll);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', fnScroll);
-});
 </script>
 
 <style lang="sass" scoped>
 @import @/assets/style/public.sass
-.s2
+.s3
   height: 58vw
   position: relative
   background:
-    image: url("./s2/bg.png")
+    image: url("./s3/bg.png")
     repeat: no-repeat
     size: cover
     position: center 0
@@ -88,14 +62,14 @@ img
 
 .horizon
   position: absolute
-  width: 46%
+  width: 62%
   left: 50%
   transform: translateX(-50%)
-  top: 30px
+  top: 0
   // mix-blend-mode: multiply
 
 .title_box
-  padding-top: 6vw
+  padding-top: 8vw
   text-align: center
   img
     width: 24vw
@@ -104,49 +78,39 @@ img
   width: 100%
   display: flex
   justify-content: center
-  padding-top: 2vw
+  padding-top: 3vw
   .hr
+    width: 45vw
     
-.logo_box
-  // padding-top: 1vw
-  margin-top: -1vw
-  text-align: center
-  img
-    width: 32vw
-
 .svg_box
   padding:
-    top: 5vw
-    left: 15vw
-  width: 85vw
-  .svg
-    width: 100%
+    top: 2vw
+  text-align: center
+  img
+    width: 76%
 
 @media screen and (max-width: $bp)
-  .s2
+  .s3
     height: 185vw
-
-  .memo
-    font-size: 2vw
-
+  
+  
   .horizon
-    width: 90%
+    width: 100%
 
   .title_box
-    padding-top: 25vw
+    padding-top: 19vw
     img
       width: 43vw
 
   .hr_box
     padding-top: 7vw
+    .hr
+      width: 86vw
       
-  .logo_box
-    margin-top: 5vw
-    img
-      width: 65vw
-
   .svg_box
     padding:
-      top: 15vw
+      top: 7vw
+    img
+      width: 84%
 
 </style>
