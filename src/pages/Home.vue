@@ -11,10 +11,24 @@
   <!--loading end-->
   <Nav v-if="info.navList.length > 0" />
   <div class="home overflow-hidden font-['Noto_Sans_TC',sans-serif] bg-[#ffffff]">
-    <S1 />
-    <S2 />
-    <S3 />
-    <S4 />
+    <S1
+      @sec_height="fnS1SecH"
+    />
+    <S2
+      :props-show="bShow2" 
+      @sec_height="fnS2SecH"
+      @el_height="fnS2ElH"
+     />
+    <S3
+      :props-show="bShow3"
+      @sec_height="fnS3SecH"
+      @el_height="fnS3ElH"
+    />
+    <S4 
+      :props-show="bShow4"
+      @sec_height="fnS4SecH"
+      @el_height="fnS4ElH"
+    />
     <S5 />
     <S6 />
     <S7 />
@@ -83,20 +97,111 @@ import S7 from "@/section/s7.vue"
 //
 import Order from "@/section/order.vue"
 import Nav from "@/layout/navbar.vue"
-import { onMounted, ref } from "vue"
+import { onMounted, onUnmounted, ref } from "vue"
 
 import AOS from 'aos';
 
-const isLoading = ref(true)
-const gtmNoScript = ref('')
+const isLoading = ref(true);
+const gtmNoScript = ref('');
+//
+const bShow2 = ref(false);
+const bShow3 = ref(false);
+const bShow4 = ref(false);
+//
+let nS1SecH = ref(null);
+const fnS1SecH = (h) => {
+  console.log('s1 sech', h);
+  nS1SecH = h;
+}
+//
+let nS2SecH = ref(null);
+let nS2ElH = ref(null);
+const fnS2SecH = (h) => {
+  console.log('s2 sech', h);
+  nS2SecH = h;
+}
+const fnS2ElH = (h) => {
+  console.log('s2 elh', h);
+  nS2ElH = h;
+}
+//
+let nS3SecH = ref(null);
+let nS3ElH = ref(null);
+const fnS3SecH = (h) => {
+  console.log('s3 sech', h);
+  nS3SecH = h;
+}
+const fnS3ElH = (h) => {
+  console.log('s3 elh', h);
+  nS3ElH = h;
+}
+//
+let nS4SecH = ref(null);
+let nS4ElH = ref(null);
+const fnS4SecH = (h) => {
+  console.log('s4 sech', h);
+  nS4SecH = h;
+}
+const fnS4ElH = (h) => {
+  console.log('s4 elh', h);
+  nS4ElH = h;
+}
+
+let wh = window.innerHeight;
+
 onMounted(() => {
+  console.log('wh is', wh);
   window.onload = function () {
     isLoading.value = false
     AOS.init({
       offset: 0,
       duration: 1500
     });
+
+    window.addEventListener('scroll', fnScroll);
+    console.log('nS2SecH.value', nS2SecH.value)
   };
 
-})
+});
+
+const fnScroll = () => {
+  const st = window.scrollY;
+  console.log('window.scrollY', st);
+  // S2
+  console.log('nS1SecH + nS2ElH - wh', nS1SecH + nS2ElH - wh)
+  if (st > nS1SecH + nS2ElH - wh) {
+    if (!bShow2.value) {
+      // nextTick();
+      bShow2.value = true;
+    }
+  } else {
+    bShow2.value = false;
+  }
+
+  // S3
+  console.log('nS1SecH + nS2SecH + nS3ElH - wh', nS1SecH + nS2SecH + nS3ElH - wh)
+  if (st > nS1SecH + nS2SecH + nS3ElH - wh) {
+    if (!bShow3.value) {
+      // nextTick();
+      bShow3.value = true;
+    }
+  } else {
+    bShow3.value = false;
+  }
+
+  // S4
+  console.log('nS1SecH + nS2SecH + nS3SecH + nS4ElH - wh', nS1SecH + nS2SecH + nS3SecH + nS4ElH - wh)
+  if (st > nS1SecH + nS2SecH + nS3SecH + nS4ElH - wh) {
+    if (!bShow4.value) {
+      // nextTick();
+      bShow4.value = true;
+    }
+  } else {
+    bShow4.value = false;
+  }
+};
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', fnScroll);
+});
 </script>

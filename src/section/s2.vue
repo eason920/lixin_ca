@@ -1,22 +1,22 @@
 <template>
-<article class="s2">
+<article class="s2" ref="dom">
   <div class="memo">情境示意圖</div>
   
   <img class="horizon" src="./s2/horizon.svg" />
 
-  <div class="title_box">
+  <div ref="dom_title" class="title_box">
     <img src="./s2/title.svg" data-aos="fade-up" data-aos-duration="600" />
   </div>
 
-  <div class="hr_box" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
+  <div ref="dom_hr" class="hr_box" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
     <HR class="hr" :props-color="sHrColor" />
   </div>
 
-  <div class="logo_box">
+  <div ref="dom_logo" class="logo_box">
     <img src="./s2/logo.png" data-aos="fade-in" data-aos-duration="3000" data-aos-delay="700" />
   </div>
   
-  <div v-if="bShow" class="svg_box relative">
+  <div v-if="props.propsShow" class="svg_box relative">
     <svgPc v-if="!isMobile" class="svg" />
     <svgMb v-else class="svg" />
   </div>
@@ -25,44 +25,59 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref, nextTick, computed, getCurrentInstance } from 'vue';
+import { defineProps, defineEmits ,watch ,onMounted, onUnmounted, ref, nextTick, computed, getCurrentInstance } from 'vue';
 
 // cpn
 import svgPc from './s2/svg.vue';
 import svgMb from './s2/svg_mb.vue';
 import HR from './public/hr.vue';
 
+const dom = ref(null);
+const dom_title = ref(null);
+const dom_hr = ref(null);
+const dom_logo = ref(null);
+
+const props = defineProps({
+  propsShow: {
+    type: Boolean,
+    default: false
+  }
+});
+
+const emit = defineEmits({
+  sec_height: null,
+  el_height: null
+});
+
+onMounted(() => {
+  // console.log(dom.value.offsetHeight);
+  // console.log(dom_title.value.offsetHeight );
+  // console.log(dom_hr.value.offsetHeight);
+  // console.log(dom_logo.value.offsetHeight);
+  // console.log(dom_logo.value.offsetTop);
+  setTimeout(()=>{
+    emit('sec_height',
+      dom.value.offsetHeight
+    );
+    
+    emit('el_height', 
+      dom_title.value.offsetHeight + 
+      dom_hr.value.offsetHeight +
+      dom_logo.value.offsetHeight
+    );
+  }, 1000);
+});
+
 const globals = getCurrentInstance().appContext.config.globalProperties;
 const isMobile = computed(() => globals.$isMobile());
 
-const bShow = ref(false);
 const sHrColor = ref(
   !isMobile 
   ? '140,140,140' 
   : '255,255,255'
 );
 
-const fnScroll = () => {
-  const st = window.scrollY;
-  console.log('window.scrollY', st);
-  if (st > 500) {
-    if (!bShow.value) {
-      nextTick();
-      bShow.value = true;
-    }
-  } else {
-    bShow.value = false;
-  }
-};
 
-
-onMounted(() => {
-  window.addEventListener('scroll', fnScroll);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', fnScroll);
-});
 </script>
 
 <style lang="sass" scoped>

@@ -1,5 +1,5 @@
 <template>
-  <article class="s1 overflow-hidden" id="s1">
+  <article ref="dom" class="s1 overflow-hidden" id="s1">
     <div class="ani_bg">
       <img v-for="i in 7" :key="i" src="./s1/bg_ani.png">
     </div>
@@ -23,6 +23,29 @@
   <!--  <div class="bbb"></div>  -->
   </article>
 </template>
+
+<script setup>
+import { defineProps, defineEmits ,watch ,onMounted, onUnmounted, ref, nextTick, computed, getCurrentInstance } from 'vue';
+
+const dom = ref(null);
+
+const emit = defineEmits({
+  el_height: null
+});
+
+onMounted(() => {
+  // console.log(dom.value.offsetHeight);
+  // console.log(dom_title.value.offsetHeight );
+  // console.log(dom_hr.value.offsetHeight);
+  // console.log(dom_logo.value.offsetHeight);
+  // console.log(dom_logo.value.offsetTop);
+  setTimeout(()=>{
+    emit('sec_height',
+      dom.value.offsetHeight
+    );
+  }, 1000);
+});
+</script>
 
 <style lang="sass" scoped>
 @import @/assets/style/public.sass

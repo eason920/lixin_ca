@@ -1,18 +1,18 @@
 <template>
-<article class="s3">
+<article ref="dom" class="s3">
   <div class="memo">情境示意圖</div>
   
   <img class="horizon" src="./s3/horizon.svg" />
 
-  <div class="title_box">
+  <div ref="dom_title" class="title_box">
     <img src="./s3/title.svg" data-aos="fade-up" data-aos-duration="600" />
   </div>
 
-  <div class="hr_box" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
+  <div ref="dom_hr" class="hr_box" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
     <HR class="hr" :props-color="sHrColor" />
   </div>
 
-  <div v-if="bShow" class="svg_box">
+  <div v-if="props.propsShow" class="svg_box">
     <svgPc v-if="!isMobile" class="svg" />
     <img v-else src="./s3/svg_mb.svg" />
   </div>
@@ -21,16 +21,50 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref, nextTick, computed, getCurrentInstance } from 'vue';
+import { defineProps, onMounted, onUnmounted, ref, nextTick, computed, getCurrentInstance } from 'vue';
 
 // cpn
 import svgPc from './s3/svg.vue';
+
 import HR from './public/hr.vue';
+
+const dom = ref(null);
+const dom_title = ref(null);
+const dom_hr = ref(null);
+
+const props = defineProps({
+  propsShow: {
+    type: Boolean,
+    default: false
+  }
+});
+
+const emit = defineEmits({
+  sec_height: null,
+  el_height: null
+});
+
+onMounted(() => {
+  // console.log(dom.value.offsetHeight);
+  // console.log(dom_title.value.offsetHeight );
+  // console.log(dom_hr.value.offsetHeight);
+  // console.log(dom_logo.value.offsetHeight);
+  // console.log(dom_logo.value.offsetTop);
+  setTimeout(()=>{
+    emit('sec_height',
+      dom.value.offsetHeight
+    );
+    
+    emit('el_height', 
+      dom_title.value.offsetHeight + 
+      dom_hr.value.offsetHeight
+    );
+  }, 1000);
+});
 
 const globals = getCurrentInstance().appContext.config.globalProperties;
 const isMobile = computed(() => globals.$isMobile());
 
-const bShow = ref(true);
 const sHrColor = ref(
   !isMobile 
   ? '140,140,140' 

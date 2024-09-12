@@ -1,18 +1,18 @@
 <template>
-<article class="s4">
+<article ref="dom" class="s4">
   <div class="memo">實際空拍美化圖</div>
 
   <img class="horizon" src="./s4/horizon.svg" />
 
-  <div class="title_box">
+  <div ref="dom_title" class="title_box">
     <img src="./s4/title.svg" data-aos="fade-up" data-aos-duration="600" />
   </div>
 
-  <div class="hr_box" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
+  <div ref="dom_hr" class="hr_box" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
     <HR class="hr" :props-color="sHrColor" />
   </div>
 
-  <div v-if="bShow" class="svg_box">
+  <div v-if="props.propsShow" class="svg_box">
     <img v-if="!isMobile" src="./s4/svg.svg" />
     <img v-else src="./s4/svg_mb.svg" />
   </div>
@@ -25,15 +25,49 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref, nextTick, computed, getCurrentInstance } from 'vue';
+import { defineProps, onMounted, onUnmounted, ref, nextTick, computed, getCurrentInstance } from 'vue';
 
 // cpn
 import HR from './public/hr.vue';
 
+const dom = ref(null);
+const dom_title = ref(null);
+const dom_hr = ref(null);
+const dom_logo = ref(null);
+
+const props = defineProps({
+  propsShow: {
+    type: Boolean,
+    default: false
+  }
+});
+
+const emit = defineEmits({
+  sec_height: null,
+  el_height: null
+});
+
+onMounted(() => {
+  // console.log(dom.value.offsetHeight);
+  // console.log(dom_title.value.offsetHeight );
+  // console.log(dom_hr.value.offsetHeight);
+  // console.log(dom_logo.value.offsetHeight);
+  // console.log(dom_logo.value.offsetTop);
+  setTimeout(()=>{
+    emit('sec_height',
+      dom.value.offsetHeight
+    );
+    
+    emit('el_height', 
+      dom_title.value.offsetHeight + 
+      dom_hr.value.offsetHeight
+    );
+  }, 1000);
+});
+
 const globals = getCurrentInstance().appContext.config.globalProperties;
 const isMobile = computed(() => globals.$isMobile());
 
-const bShow = ref(true);
 const sHrColor = ref(
   !isMobile 
   ? '140,140,140' 
@@ -85,16 +119,19 @@ img
   padding-top: 3vw
   .hr
     width: 45vw
-    
+
+$w_svgpc: 70vw
 .svg_box
   padding:
     top: 1vw
   text-align: center
   img
-    width: 70%
+    width: $w_svgpc
 
 .city_box
-  padding-top: 4vw
+  position: absolute
+  top: calc( 21vw + $w_svgpc * 0.233)
+  width: 100%
   text-align: center
   img
     width: 30vw
