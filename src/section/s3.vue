@@ -13,7 +13,8 @@
   </div>
 
   <div v-if="bShow" class="svg_box">
-    <img v-if="!isMobile" src="./s3/svg.svg" />
+    <!-- <img v-if="!isMobile" src="./s3/svg.svg" class="absolute left-0 right-0 opacity-40" /> -->
+    <svgPc v-if="!isMobile" class="svg" />
     <img v-else src="./s3/svg_mb.svg" />
   </div>
   
@@ -24,6 +25,7 @@
 import { onMounted, onUnmounted, ref, nextTick, computed, getCurrentInstance } from 'vue';
 
 // cpn
+import svgPc from './s3/svg.vue';
 import HR from './public/hr.vue';
 
 const globals = getCurrentInstance().appContext.config.globalProperties;
@@ -86,8 +88,9 @@ img
   padding:
     top: 2vw
   text-align: center
-  img
+  img, .svg
     width: 76%
+    margin: auto
 
 @media screen and (max-width: $bp)
   .s3

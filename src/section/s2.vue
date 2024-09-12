@@ -16,9 +16,9 @@
     <img src="./s2/logo.png" data-aos="fade-in" data-aos-duration="3000" data-aos-delay="700" />
   </div>
   
-  <div v-if="bShow" class="svg_box">
+  <div v-if="bShow" class="svg_box relative">
     <svgPc v-if="!isMobile" class="svg" />
-    <img v-else src="./s2/svg_mb.svg" />
+    <svgMb v-else class="svg" />
   </div>
   
 </article>
@@ -29,6 +29,7 @@ import { onMounted, onUnmounted, ref, nextTick, computed, getCurrentInstance } f
 
 // cpn
 import svgPc from './s2/svg.vue';
+import svgMb from './s2/svg_mb.vue';
 import HR from './public/hr.vue';
 
 const globals = getCurrentInstance().appContext.config.globalProperties;
@@ -147,5 +148,9 @@ img
   .svg_box
     padding:
       top: 15vw
+    img
+      top: 15vw
+      width: calc(100% - 15vw)
+      opacity: 0.3
 
 </style>
