@@ -1,117 +1,130 @@
 <template>
-  <article class="s4">
-    <img class="horizon" src="./s4/horizon.svg" />
-    <div class="logo_box">
-      <div class="overflow-hidden">
-        <img data-aos="fade-up" src="./s4/logo.svg" data-aos-delay="100" />
-      </div>
-      
-      <div class="overflow-hidden">
-        <div data-aos="fade-down">
-          <img class="shadow" src="./s4/logo.svg" data-aos-delay="0" />
-        </div>
-      </div>
-    </div>
+<article class="s4">
+  <div class="memo">實際空拍美化圖</div>
 
-    <div class="txt_box">
-      <img data-aos="fade-up" src="./s4/title.svg" data-aos-delay="300" />
-      <HR :props-color="'52, 168, 222'" class="hr" />
-      <p data-aos="fade-up" data-aos-delay="300">
-        理性務實家都知道：看不見的更重要！建築如同人體，養成先天好體質，就不必日後苦當藥罐子，便能健康快活。
-        <br /><br />
-        透過美國fitwel健康建築認證，加上瑞士SGS建物生產履歷，讓您的建築具備好基因，更有全透明的健檢報告。
-      </p>
-    </div>
-  </article>
+  <img class="horizon" src="./s4/horizon.svg" />
+
+  <div class="title_box">
+    <img src="./s4/title.svg" data-aos="fade-up" data-aos-duration="600" />
+  </div>
+
+  <div class="hr_box" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
+    <HR class="hr" :props-color="sHrColor" />
+  </div>
+
+  <div v-if="bShow" class="svg_box">
+    <img v-if="!isMobile" src="./s4/svg.svg" />
+    <img v-else src="./s4/svg_mb.svg" />
+  </div>
+
+  <div class="city_box" data-aos="fade-up">
+    <img src="./s4/city.svg" />
+  </div>
+  
+</article>
 </template>
 
+<script setup>
+import { onMounted, onUnmounted, ref, nextTick, computed, getCurrentInstance } from 'vue';
+
+// cpn
+import HR from './public/hr.vue';
+
+const globals = getCurrentInstance().appContext.config.globalProperties;
+const isMobile = computed(() => globals.$isMobile());
+
+const bShow = ref(true);
+const sHrColor = ref(
+  !isMobile 
+  ? '140,140,140' 
+  : '255,255,255'
+);
+
+</script>
+
 <style lang="sass" scoped>
-// @import '@/assets/style/function.scss'
 @import @/assets/style/public.sass
 .s4
-  height: 60vw
+  height: 58vw
   position: relative
   background:
-    //image: url("./s4/bg.jpg")
+    image: url("./s4/bg.png")
     repeat: no-repeat
     size: cover
     position: center 0
-    // color: #f9f9f9
 
 img
   width: 100%
 
+.memo
+  position: absolute
+  color: #fff
+  letter-spacing: 1px
+  bottom: 1vw
+  right: 2vw
+  font-size: .7vw
+
 .horizon
   position: absolute
-  width: 46%
-  left: 27%
+  width: 40%
+  left: 50%
+  transform: translateX(-50%)
   top: 30px
-  mix-blend-mode: multiply
+  // mix-blend-mode: multiply
 
-.logo_box
-  position: absolute
-  width: 100%
-  left: 0%
-  top: 0
+.title_box
+  padding-top: 6vw
   text-align: center
   img
-    width: 46%
-  .overflow-hidden
-    &:nth-child(1)
-      padding-top: 14.5vw
-      background: radial-gradient(60% 92% at 50% 100%, #0069E5 0%, rgba(0, 105, 229, 0.00) 100%)
-    &:nth-child(2)
-      background: linear-gradient(175deg, rgba(0, 117, 255, 0.50) 0%, rgba(0, 153, 255, 0.20) 14.54%, rgba(0, 153, 255, 0.00) 47.65%)
-      padding-bottom: 15vw
+    width: 24vw
 
-.shadow
-  transform: rotateX(-180deg) scale(1, .5)
-  transform-origin: 0 34%
-  opacity: .3
+.hr_box
+  width: 100%
+  display: flex
+  justify-content: center
+  padding-top: 3vw
+  .hr
+    width: 45vw
+    
+.svg_box
+  padding:
+    top: 1vw
+  text-align: center
+  img
+    width: 70%
 
-.txt_box
-  position: absolute
-  width: 32%
-  left: 34%
-  top: 30vw
-  z-index: 15
-
-.hr
-  margin: 2vw 0
-
-p
-  font-size: $fs
+.city_box
+  padding-top: 4vw
+  text-align: center
+  img
+    width: 30vw
 
 @media screen and (max-width: $bp)
   .s4
     height: 185vw
+
+  
   .horizon
-    width: 90%
-    left: 5%
+    width: 72%
 
-  .logo_box
+  .title_box
+    padding-top: 17vw
     img
-      width: 90%
-    .overflow-hidden
-      &:nth-child(1)
-        padding-top: 45vw
-        background: radial-gradient(80% 92% at 50% 100%, #0069E5 0%, rgba(0, 105, 229, 0.00) 100%)
-      &:nth-child(2)
-        padding-bottom: 30vw
+      width: 43vw
 
-  .txt_box
-    width: 80%
-    left: 10%
-    top: 90vw
+  .hr_box
+    padding-top: 6vw
+    .hr
+      width: 70vw
+      
+  .svg_box
+    padding:
+      top: 0vw
+    img
+      width: 70%
 
-  .hr
-    margin: 6vw 0
-
-  p
-    font-size: $fs_m
+  .city_box
+    padding-top: 11vw
+    img
+      width: 70vw
 </style>
-
-<script setup>
-import HR from './public/hr.vue'
-</script>
-

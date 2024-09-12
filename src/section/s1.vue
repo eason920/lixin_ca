@@ -1,5 +1,5 @@
 <template>
-  <article class="s1" id="s1">
+  <article class="s1 overflow-hidden" id="s1">
     <div class="ani_bg">
       <img v-for="i in 7" :key="i" src="./s1/bg_ani.png">
     </div>
@@ -165,6 +165,7 @@
   user-select: none
   pointer-events: none
   position: fixed
+  position: absolute
   width: 100%
   height: 100%
   z-index: 12

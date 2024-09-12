@@ -6,7 +6,7 @@
 
 <style lang="sass" scoped>
 div
-  height: 2px
+  height: 1px
 </style>
 
 <script setup>
