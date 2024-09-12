@@ -13,7 +13,6 @@
   </div>
 
   <div v-if="bShow" class="svg_box">
-    <!-- <img v-if="!isMobile" src="./s3/svg.svg" class="absolute left-0 right-0 opacity-40" /> -->
     <svgPc v-if="!isMobile" class="svg" />
     <img v-else src="./s3/svg_mb.svg" />
   </div>
