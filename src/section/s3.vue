@@ -14,7 +14,7 @@
 
   <div v-if="props.propsShow" class="svg_box">
     <svgPc v-if="!isMobile" class="svg" />
-    <img v-else src="./s3/svg_mb.svg" />
+    <svgMb v-else class="svg" />
   </div>
   
 </article>
@@ -25,7 +25,7 @@ import { defineProps, onMounted, onUnmounted, ref, nextTick, computed, getCurren
 
 // cpn
 import svgPc from './s3/svg.vue';
-
+import svgMb from './s3/svg_mb.vue';
 import HR from './public/hr.vue';
 
 const dom = ref(null);
@@ -146,7 +146,7 @@ img
   .svg_box
     padding:
       top: 7vw
-    img
+    img, .svg
       width: 84%
 
 </style>

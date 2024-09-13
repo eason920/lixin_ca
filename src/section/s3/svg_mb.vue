@@ -1,32 +1,33 @@
 <template>
-<svg version="1.1" id="easonSvg" xmlns="http://www.w3.org/2000/svg" 
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
 	xmlns:xlink="http://www.w3.org/1999/xlink" 
-	viewBox="0 0 1453 548">
-<rect fill="#0000" x="-27" y="-117" width="1573" height="604"/>
+	viewBox="0 0 313 428">
 <defs>
-	<linearGradient id="l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="286" y2="0">
+	<linearGradient id="l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="105" y2="0">
 		<stop offset="0" stop-color="#FFF0"/>
 		<stop offset="0.5" stop-color="#FFF"/>
 		<stop offset="1" stop-color="#FFF0"/>
 	</linearGradient>
-	<path id="l1" fill="none" stroke="url(#l0)" d="M0,0.5h286 M0,49.5h286"/>
+	<path id="l1" fill="none" stroke="url(#l0)" d="M0,0.5h105 M0,17.5h105"/>
 	<g id="p3">
-	<path class="st13" d="M1160.7,14l19,19 M1179.6,14l-19,19"/>
-<path class="st4" d="M1136.8,9.8c-6.5,0-6.5-9.8,0-9.8C1143.3,0,1143.3,9.8,1136.8,9.8z M1137.2,35.2v14.4c0,2.5,4.8,2.5,4.8,0V19.2
-	c0-0.6,0.7-0.6,0.7,0v8.2c0,2.2,3.4,2.2,3.4,0V13.7c0-1.7-1.3-3-3-3h-12.8c-1.7-0.1-3,1.2-3,2.9v13.8c0,2.2,3.4,2.2,3.4,0v-8.2
-	c0-0.6,0.7-0.6,0.7,0v30.3c0,2.5,4.8,2.5,4.8,0V35.2C1136.4,34,1137.2,34,1137.2,35.2z"/></g>
+	<path class="st13" d="M140.4,5.1l6.9,6.9 M147.3,5.1l-6.9,6.9"/>
+	<path class="st4" d="M131.7,3.6c-2.4,0-2.4-3.6,0-3.6C134.1,0,134.1,3.6,131.7,3.6z M131.9,12.8V18c0,0.9,1.8,0.9,1.8,0V7
+		c0-0.2,0.3-0.2,0.3,0v3c0,0.8,1.2,0.8,1.2,0V5c0-0.6-0.5-1.1-1.1-1.1h-4.7c-0.6,0-1.1,0.4-1.1,1.1v5c0,0.8,1.2,0.8,1.2,0v-3
+		c0-0.2,0.3-0.2,0.3,0v11c0,0.9,1.8,0.9,1.8,0v-5.2C131.6,12.3,131.9,12.3,131.9,12.8z"/>
+</g>
 </defs>
 <g opacity="0">
-	<text x="104" y="34" class="st1 st2 st3" textLength="147" lengthAdjust="spacing">三期開發面積</text>
-	<use xlink:href="#l1" x="34" y="0" />
-	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" id="an3idt1"></animate>
+	<text x="47" y="12" class="st1 st2 st3">三期開發面積</text>
+	<use xlink:href="#l1" x="21" y="0" />
+	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" id="an3midt1"></animate>
 </g>
 <g opacity="0">
-	<text x="240" y="140" class="st4 st2 font49" text-anchor="end">84.5</text>
-	<text x="240" y="138" class="st1 st2 font19" >公頃</text>
-	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3idt1.end-.5s"></animate>
-	<g fill="none">
-	<path stroke="#A4C0F3" stroke-width=".8" d="M109.7,356l-0.7-12.8l-8.8-18.2l-35.8,22.8l3.3,13.2v37.4l29.7-1.9l2.7,17.8l12-1.5l-3-33.4l19.6-1.9v-22.2
+	<text x="95" y="50" class="st4 st2 font49" text-anchor="end">84.5</text>
+	<text x="97" y="50" class="st1 st2 font19" >公頃</text>
+	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3midt1.end-.5s"></animate>
+	<g fill="none" class="st24">
+	<path stroke="#A4C0F3" stroke-width=".8" 
+		d="M109.7,356l-0.7-12.8l-8.8-18.2l-35.8,22.8l3.3,13.2v37.4l29.7-1.9l2.7,17.8l12-1.5l-3-33.4l19.6-1.9v-22.2
 		L109.7,356z M316.9,274v40.5c0,0-7,11.7-40.2,13.1l9.7-53.6L316.9,274L316.9,274z M316.9,274h12.9V353h-56.3l1.5-9.2h17.8v-16.3
 		c0,0,18.8-4.3,24.1-8.5L316.9,274L316.9,274z M216.7,250.6v17.2l-4.8,27.3l-31.1-38.1l-3.8,5.4l-5.4-24.1l18.6-12l20.5,24.4H216.7z
 		 M171.7,238.3l-4-12.5l-39,8.6l-4.5-12.4l25-7.7l30-4.8v5.9h5.9v4.8l5.2,6.2L171.7,238.3z M128.6,234.4l-76.3,26.3l-5-12.1
@@ -147,74 +148,74 @@
 </g>
 </g>
 <g opacity="0">
-	<text x="613" y="34" class="st1 st2 st3" textLength="147" lengthAdjust="spacing">招商引資成績</text>
-	<use xlink:href="#l1" x="543" y="0" />
-	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3idt1.end" id="an3idt2"></animate>
+	<text x="219" y="12" class="st1 st2 st3">招商引資成績</text>
+	<use xlink:href="#l1" x="193" y="0" />
+	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3midt1.end" id="an3midt2"></animate>
 </g>
 <g opacity="0">
-	<circle class="st13" stroke-width="3" cx="565.3" cy="145" r="55.3"/>
-	<path class="st4" d="M555.5,123.1v10.1l-23.4-10.1v43.7h66.5v-43.7h-19.7v10.1L555.5,123.1z"/>
-	<text x="652" y="113" class="st1 st2 font19">2024年中已引進</text>
-	<text x="739" y="190" class="st4 st2 font49" text-anchor="end">15</text>
-	<text x="743" y="190" class="st1 st2 font19">家廠商</text>
-	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3idt2.end-.5s" id="an3id2"></animate>
+	<circle class="st13" stroke-width="3" cx="197" cy="56.6" r="20.1"/>
+	<path class="st4" d="M209.1,64.6V48.7h-7.2v3.7l-8.5-3.7v3.7l-8.5-3.7v15.9H209.1z"/>
+	<text x="230" y="45" class="st1 st2 font19">2024年中已引進</text>
+	<text x="260" y="73" class="st4 st2 font49" text-anchor="end">15</text>
+	<text x="263" y="73" class="st1 st2 font19">家廠商</text>
+	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3midt2.end-.5s" id="an3mid2"></animate>
 </g>
 <g opacity="0">
-	<circle class="st13" stroke-width="3" cx="565.3" cy="310" r="55.3"/>
-	<path class="st4" d="M565.3,283.7l23.4,11.3l9.6-6.3l-33-16l-33,16l9.6,6.3L565.3,283.7z M565.3,299.3l25.9,12.5l10.2-6.7
-	l-36.1-17.4l-36.1,17.4l10.2,6.7L565.3,299.3z M565.3,303.3l-38,18.4l38,20l38-20L565.3,303.3z"/>
+	<circle class="st13" stroke-width="3" cx="197" cy="116.6" r="20.1"/>
+	<path class="st4" d="M197,107.1l8.5,4.1l3.5-2.3l-12-5.8l-12,5.8l3.5,2.3L197,107.1z M197,112.7l9.4,4.6l3.7-2.4l-13.1-6.3
+	l-13.1,6.3l3.7,2.4L197,112.7z M197,114.2l-13.8,6.7l13.8,7.3l13.8-7.3L197,114.2z"/>
+	<text x="230" y="105" class="st1 st2 font19">需求土地面積</text>
+	<text x="297" y="133" class="st4 st2 font492" text-anchor="end">27.67</text>
+	<text x="296" y="133" class="st1 st2 font19">公頃</text>
+	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3midt2.end" id="an3mid2"></animate>
+</g>
+<g opacity="0">
+	<circle class="st13" stroke-width="3" cx="197" cy="176.6" r="20.1"/>
+	<path class="st4" d="M201.3,169.8c-1.8-2.2-6.8-2.9-6.8,0.7c0,3.8,9.4,3.2,9.4,10.1c0,3.4-1.9,5.9-5.4,6.5v3.6h-3.1v-3.5
+	c-2.1-0.2-4.5-1.2-6.1-2.7l2-3.1c2.4,2.2,8.1,3.6,8.2-0.6c0-4.2-9.4-3.8-9.4-10.2c0-3.4,2-5.7,5.2-6.3v-3.6h3.1v3.5
+	c2.2,0.3,3.8,1.4,5.1,2.8L201.3,169.8z"/>
+	<text x="230" y="165" class="st1 st2 font19">預估未來年產值</text>
+	<text x="275" y="193" class="st4 st2 font49" text-anchor="end">930</text>
+	<text x="278" y="193" class="st1 st2 font19">億元</text>
+	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3midt2.end+.5s" id="an3mid2"></animate>
+</g>
 
-	<text x="652" y="278" class="st1 st2 font19">需求土地面積</text>
-	<text x="840" y="355" class="st4 st2 font49" textLength="190" lengthAdjust="spacing" text-anchor="end">27.67</text>
-	<text x="840" y="355" class="st1 st2 font19">公頃</text>
-	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3idt2.end"></animate>
+<g opacity="0">
+	<text x="116" y="245" class="st1 st2 st3">預計創造就業職缺</text>
+	<use xlink:href="#l1" x="100" y="232" />
+	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3midt2.end" id="an3midt3"></animate>
 </g>
 <g opacity="0">
-	<circle class="st13" stroke-width="3" cx="565.3" cy="475" r="55.3"/>
-	<path class="st4" d="M577.3,456.2c-5.1-6-18.6-8-18.7,2c0,10.5,25.8,8.9,25.8,27.9c0,9.2-5.2,16.1-14.9,18v9.9h-8.4v-9.5
-	c-5.8-0.7-12.3-3.3-16.8-7.4l5.5-8.4c6.6,6.1,22.4,9.8,22.7-1.7c0-11.5-25.8-10.4-25.8-28.2c0-9.2,5.5-15.6,14.4-17.3v-9.8h8.4v9.7
-	c6.1,0.9,10.4,3.9,14.1,7.7L577.3,456.2z"/>
+	<text x="121" y="282" class="st1 st2 font19" text-anchor="end">南科1、2期</text>
+	<text x="150" y="287" class="st4 st2 font492">100,000</text>
+	<use xlink:href="#p3" x="0" y="269"></use>
+	<animate  attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3midt3.end-.5s"></animate>
+</g>
+<g opacity="0">
+	<text x="121" y="316" class="st1 st2 font19" text-anchor="end">ABCDE區</text>
+	<text x="150" y="321" class="st4 st2 font492">23,000</text>
+	<use xlink:href="#p3" x="0" y="303"></use>
+	<animate  attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3midt3.end"></animate>
+</g>
+<g opacity="0">
+	<text x="121" y="350" class="st1 st2 font19" text-anchor="end">樹谷園區</text>
+	<text x="150" y="355" class="st4 st2 font492">20,000</text>
+	<use xlink:href="#p3" x="0" y="337"></use>
+	<animate  attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3midt3.end+.5s"></animate>
+</g>
+<g opacity="0">
+	<text x="121" y="384" class="st1 st2 font19" text-anchor="end">新市產業園區</text>
+	<text x="150" y="389" class="st4 st2 font492">4,900</text>
+	<use xlink:href="#p3" x="0" y="371"></use>
+	<animate  attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3midt3.end+1s"></animate>
+</g>
+<g opacity="0">
+	<text x="121" y="418" class="st1 st2 font19" text-anchor="end">南科三期</text>
+	<text x="150" y="423" class="st4 st2 font492">4,900</text>
+	<use xlink:href="#p3" x="0" y="405"></use>
+	<animate  attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3midt3.end+1.5s"></animate>
+</g>
 
-	<text x="652" y="443" class="st1 st2 font19">預估未來年產值</text>
-	<text x="783" y="520" class="st4 st2 font49" text-anchor="end">930</text>
-	<text x="790" y="520" class="st1 st2 font19">億元</text>
-	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3idt2.end+.5s"></animate>
-</g>
-<g opacity="0">
-	<text x="1097" y="34" class="st1 st2 st3" textLength="196" lengthAdjust="spacing">預計創造就業職缺</text>
-	<use xlink:href="#l1" x="1051" y="0" />
-	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3idt2.end" id="an3idt3"></animate>
-</g>
-<g opacity="0">
-	<text x="1110" y="140" class="st1 st2 font19" text-anchor="end">南科1、2期</text>
-	<text x="1190" y="150" class="st4 st2 font492">100,000</text>
-	<use xlink:href="#p3" x="0" y="100" opacity="1"></use>
-	<animate  attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3idt3.end-.5s"></animate>
-</g>
-<g opacity="0">
-	<text x="1110" y="232" class="st1 st2 font19" text-anchor="end">ABCDE區</text>
-	<text x="1190" y="242" class="st4 st2 font492">23,000</text>
-	<use xlink:href="#p3" x="0" y="192" opacity="1"></use>
-	<animate  attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3idt3.end"></animate>
-</g>
-<g opacity="0">
-	<text x="1110" y="324" class="st1 st2 font19" text-anchor="end">樹谷園區</text>
-	<text x="1190" y="334" class="st4 st2 font492">20,000</text>
-	<use xlink:href="#p3" x="0" y="284" opacity="1"></use>
-	<animate  attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3idt3.end+.5s"></animate>
-</g>
-<g opacity="0">
-	<text x="1110" y="416" class="st1 st2 font19" text-anchor="end">新市產業園區</text>
-	<text x="1190" y="426" class="st4 st2 font492">4,900</text>
-	<use xlink:href="#p3" x="0" y="376" opacity="1"></use>
-	<animate  attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3idt3.end+1s"></animate>
-</g>
-<g opacity="0">
-	<text x="1110" y="508" class="st1 st2 font19" text-anchor="end">南科三期</text>
-	<text x="1190" y="518" class="st4 st2 font492">4,900</text>
-	<use xlink:href="#p3" x="0" y="468" opacity="1"></use>
-	<animate  attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an3idt3.end+1.5s"></animate>
-</g>
 </svg>
 
 </template>
@@ -223,21 +224,21 @@
 .st1{fill:#FFFFFF;}
 .st2{font-family:'NotoSansCJKtc-Bold-B5pc-H';
 font-family: "Noto Sans TC";}
-.st3{font-size:23px;font-weight: Bold;}
-.font49{font-size:73px;font-weight: 900;}
-.font492{font-size:73px;font-weight: 900;letter-spacing: -.06em;}
-.font43{font-size:43px;font-weight: 900;}
-.font33{font-size:33px;font-weight: 900;}
-.font19{font-size:22px;font-weight: 400;letter-spacing: .08em;}
-.font23{font-size:23px;font-weight: 500;letter-spacing: .06em;}
+.st3{font-size:9px;font-weight: Bold;}
+.font49{font-size:26px;font-weight: 900;}
+.font492{font-size:26px;font-weight: 900;letter-spacing: -.03em;}
+.font43{font-size:17px;font-weight: 900;}
+.font33{font-size:12px;font-weight: 900;}
+.font19{font-size:8px;font-weight: 400;letter-spacing: .06em;}
+.font23{font-size:8px;font-weight: 500;letter-spacing: .06em;}
 .st4{fill:#E85A29;}
-.st8{opacity:0.2;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-.st13{fill:none;stroke:#E85A29;stroke-width:1.5;}
+.st8{opacity:0.4;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-width:0.4;}
+.st13{fill:none;stroke:#E85A29;stroke-width:.5;}
 .st14{fill:none;stroke:#E85A29;stroke-width:30;stroke-miterlimit:10;}
-.st19{fill:none;stroke:#7F7F7F;stroke-width:30;}
-.st20{fill:none;stroke:#E85A29;stroke-width:30;}
-.st23{fill:none;stroke-width:132;}
-.st50{stroke:#f15a2233;}
+.st19{fill:none;stroke:#7F7F7F;stroke-width:11;}
+.st20{fill:none;stroke:#E85A29;stroke-width:11;}
+.st23{fill:none;stroke-width:48;}
+.st24{transform:scale(.385);transform-origin: 2px -5px;}
 </style>
 
 <style lang="sass" scoped>

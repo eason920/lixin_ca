@@ -13,8 +13,9 @@
   </div>
 
   <div v-if="props.propsShow" class="svg_box">
-    <img v-if="!isMobile" src="./s4/svg.svg" />
-    <img v-else src="./s4/svg_mb.svg" />
+    <img v-if="isMobile" src="./s4/svg_mb.svg" class="absolute left-0 right-0 opacity-40" />
+    <svgPc v-if="!isMobile" class="svg" />
+    <svgMb v-else class="svg" />
   </div>
 
   <div class="city_box" data-aos="fade-up">
@@ -29,6 +30,8 @@ import { defineProps, onMounted, onUnmounted, ref, nextTick, computed, getCurren
 
 // cpn
 import HR from './public/hr.vue';
+import svgPc from './s4/svg.vue';
+import svgMb from './s4/svg_mb.vue';
 
 const dom = ref(null);
 const dom_title = ref(null);
@@ -125,8 +128,9 @@ $w_svgpc: 70vw
   padding:
     top: 1vw
   text-align: center
-  img
+  img, .svg
     width: $w_svgpc
+    margin: auto
 
 .city_box
   position: absolute
@@ -157,7 +161,7 @@ $w_svgpc: 70vw
   .svg_box
     padding:
       top: 0vw
-    img
+    img, .svg
       width: 70%
 
   .city_box
