@@ -165,7 +165,7 @@ $w_svgpc: 70vw
       width: 70%
 
   .city_box
-    padding-top: 11vw
+    top: 128vw
     img
       width: 70vw
 </style>

@@ -159,17 +159,19 @@ onMounted(() => {
     });
 
     window.addEventListener('scroll', fnScroll);
-    console.log('nS2SecH.value', nS2SecH.value)
+    fnScroll();
   };
 
 });
 
 const fnScroll = () => {
   const st = window.scrollY;
-  console.log('window.scrollY', st);
+  // console.log('window.scrollY', st);
   // S2
-  console.log('nS1SecH + nS2ElH - wh', nS1SecH + nS2ElH - wh)
-  if (st > nS1SecH + nS2ElH - wh) {
+  // console.log('nS1SecH + nS2ElH - wh', nS1SecH + nS2ElH - wh)
+  if (st > nS1SecH + nS2ElH - wh &&
+      st < nS1SecH + nS2SecH
+  ) {
     if (!bShow2.value) {
       // nextTick();
       bShow2.value = true;
@@ -179,8 +181,10 @@ const fnScroll = () => {
   }
 
   // S3
-  console.log('nS1SecH + nS2SecH + nS3ElH - wh', nS1SecH + nS2SecH + nS3ElH - wh)
-  if (st > nS1SecH + nS2SecH + nS3ElH - wh) {
+  // console.log('nS1SecH + nS2SecH + nS3ElH - wh', nS1SecH + nS2SecH + nS3ElH - wh)
+  if (st > nS1SecH + nS2SecH + nS3ElH - wh + 200 && 
+      st < nS1SecH + nS2SecH + nS3SecH
+  ) {
     if (!bShow3.value) {
       // nextTick();
       bShow3.value = true;
@@ -190,8 +194,10 @@ const fnScroll = () => {
   }
 
   // S4
-  console.log('nS1SecH + nS2SecH + nS3SecH + nS4ElH - wh', nS1SecH + nS2SecH + nS3SecH + nS4ElH - wh)
-  if (st > nS1SecH + nS2SecH + nS3SecH + nS4ElH - wh) {
+  // console.log('nS1SecH + nS2SecH + nS3SecH + nS4ElH - wh', nS1SecH + nS2SecH + nS3SecH + nS4ElH - wh)
+  if (st > nS1SecH + nS2SecH + nS3SecH + nS4ElH - wh + 200  &&
+      st < nS1SecH + nS2SecH + nS3SecH + nS4SecH
+  ) {
     if (!bShow4.value) {
       // nextTick();
       bShow4.value = true;
