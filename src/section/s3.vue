@@ -79,7 +79,7 @@ const sHrColor = ref(
   height: 58vw
   position: relative
   background:
-    image: url("./s3/bg.png")
+    image: url("./s3/bg.webp")
     repeat: no-repeat
     size: cover
     position: center 0
