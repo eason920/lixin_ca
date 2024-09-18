@@ -1,7 +1,10 @@
 <template>
     <div class="viewbox" ref="viewbox">
-        <img ref="viewImg" src="@/section/s2/map.jpg" alt="" srcset="">
-        <div class="mask" v-bind:class="{ hide: swiped }" v-if="$isMobile()">
+        <img ref="viewImg" src="@/section/s4/bg.webp" alt="" srcset="">
+        <!-- <div class="mask" v-bind:class="{ hide: swiped }" v-if="$isMobile()">
+            <img src="@/components/fullview/finger.png" alt="" srcset="">
+        </div> -->
+        <div class="mask" v-if="$isMobile()">
             <img src="@/components/fullview/finger.png" alt="" srcset="">
         </div>
     </div>
@@ -47,7 +50,7 @@
             pointer-events: none;
             opacity: 1;
             transition: all 1s;
-            background-color: rgba($color: #008DD5, $alpha: 0.5);
+           // background-color: rgba($color: #008DD5, $alpha: 0.5);
 
             img {
                 height: 47px;
@@ -67,7 +70,7 @@ import { onMounted, ref, computed, getCurrentInstance } from 'vue';
 const viewbox = ref();
 const viewImg = ref();
 const swiped = ref(false);
-const offsetRatio = 2.57; 
+const offsetRatio = 2; 
 
 const globals = getCurrentInstance().appContext.config.globalProperties;
 const isMobile = computed(() => globals.$isMobile());

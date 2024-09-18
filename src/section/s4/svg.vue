@@ -12,11 +12,6 @@
 	<path id="l1" fill="none" stroke="url(#l0)" d="M0,0.5h286 M0,49.5h286"/>
 	<path id="l2" fill="none" stroke="url(#l0)" d="M0,0.5h286"/>
 	<circle id="circle4" cx="0" cy="0" r="89" transform="rotate(-90)"></circle>
-	<circle id="circle3" class="st4" cx="16.2" cy="16.2" r="16.2"/>
-	<path id="p41" class="st4" d="M34.1,22.4V0H24v5.2L12,0v5.2L0,0v22.4H34.1z"/>
-	<path id="p42" class="st4" d="M6.9,7.2C2.1,7.2,2.1,0,6.9,0S11.7,7.2,6.9,7.2z M7.3,25.8v10.5c0,1.9,3.5,1.9,3.5,0V14.1c0-0.4,0.5-0.4,0.5,0
-	v6c0,1.6,2.5,1.6,2.5,0V10c0-1.2-1-2.2-2.2-2.2H2.2C1,7.7,0,8.7,0,9.9V20c0,1.6,2.5,1.6,2.5,0v-6c0-0.4,0.5-0.4,0.5,0v22.2
-	c0,1.9,3.5,1.9,3.5,0V25.8C6.6,24.9,7.3,24.9,7.3,25.8z"/>
 <path id="p435" class="st4" d="M6.9,7.2C2.1,7.2,2.1,0,6.9,0S11.7,7.2,6.9,7.2z M7.3,25.8v10.5c0,1.9,3.5,1.9,3.5,0V14.1c0-0.4,0.5-0.4,0.5,0
 	v6c0,1.6,2.5,1.6,2.5,0V10c0-1.2-1-2.2-2.2-2.2H2.2C1,7.7,0,8.7,0,9.9V20c0,1.6,2.5,1.6,2.5,0v-6c0-0.4,0.5-0.4,0.5,0v22.2
 	c0,1.9,3.5,1.9,3.5,0V25.8C6.6,24.9,7.3,24.9,7.3,25.8z"/>
@@ -31,39 +26,39 @@
 </g>
 <g opacity="0">
 	<use xlink:href="#l2" x="0" y="240" stroke-width="14" />
-	<text x="75" y="306" class="st4 st2 font49" text-anchor="middle">1.42</text>
-	<text x="226" y="306" class="st4 st2 font49" text-anchor="middle">1.58</text>
+	<text x="75" y="306" class="st4 st2 font49" text-anchor="middle" ref="c142">0</text>
+	<text x="226" y="306" class="st4 st2 font49" text-anchor="middle" ref="c158">0</text>
 	<text x="75" y="342" id="svgt1" class="st2 font29" text-anchor="middle">兆元</text>
 	<text x="226" y="342" id="svgt1" class="st2 font29" text-anchor="middle">兆元</text>
 	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an4idt1.end-.5s"></animate>
 	<text x="75" class="st2 font29" text-anchor="middle" opacity="0">竹科
-		<animate attributeName="y" dur=".5s" fill="freeze" from="130" to="114" begin="an4idt1.end-.5s"></animate>
-		<animate attributeName="opacity" dur=".5s" fill="freeze" from="0" to="1" begin="an4idt1.end-.5s"></animate>
+		<animate attributeName="y" dur=".8s" fill="freeze" from="130" to="114" begin="an4idt1.end-.5s"></animate>
+		<animate attributeName="opacity" dur=".8s" fill="freeze" from="0" to="1" begin="an4idt1.end-.5s"></animate>
 	</text>
 	<rect x="57" class="st4" width="40">
-		<animate attributeName="y" dur=".5s" fill="freeze" from="248" to="152" begin="an4idt1.end-.5s"></animate>
-		<animate attributeName="height" dur=".5s" fill="freeze" from="0" to="96" begin="an4idt1.end-.5s" id="an4id1"></animate>
+		<animate attributeName="y" dur=".8s" fill="freeze" from="248" to="152" begin="an4idt1.end-.5s"></animate>
+		<animate attributeName="height" dur=".8s" fill="freeze" from="0" to="96" begin="an4idt1.end-.5s" id="an4id1"></animate>
 	</rect>
 	<text x="226"  class="st2 font29" text-anchor="middle" opacity="0">南科
-		<animate attributeName="y" dur=".5s" fill="freeze" from="130" to="114" begin="an4idt1.end-.5s"></animate>
-		<animate attributeName="opacity" dur=".5s" fill="freeze" from="0" to="1" begin="an4idt1.end-.5s"></animate>
+		<animate attributeName="y" dur=".8s" fill="freeze" from="130" to="114" begin="an4idt1.end-.2s"></animate>
+		<animate attributeName="opacity" dur=".8s" fill="freeze" from="0" to="1" begin="an4idt1.end-.2s"></animate>
 	</text>
 	<rect x="208" class="st4" width="40">
-		<animate  attributeName="y" dur=".5s" fill="freeze" from="248" to="141" begin="an4id1.end-.5s"></animate>
-		<animate  attributeName="height" dur=".5s" fill="freeze" from="0" to="107" begin="an4id1.end-.5s"></animate>
+		<animate  attributeName="y" dur=".8s" fill="freeze" from="248" to="141" begin="an4id1.end-.2s"></animate>
+		<animate  attributeName="height" dur=".8s" fill="freeze" from="0" to="107" begin="an4id1.end-.2s"></animate>
 	</rect>
 </g>
 <g opacity="0">
 	<text x="450" y="34" class="st1 st2 st3">2023年人口成長率</text>
 	<use xlink:href="#l1" x="398" y="0" />
-	<use xlink:href="#p42" x="529" y="12" transform="scale(.8)" />
+	<use xlink:href="#p435" x="529" y="12" transform="scale(.8)" />
 	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an4idt1.end" id="an4idt2"></animate>
 </g>
 <g opacity="0">
 	<use xlink:href="#l2" x="450" y="240" stroke-width="14" />
-	<text x="465" y="306" class="st4 st2 font49" text-anchor="middle">0.23</text>
+	<text x="465" y="306" class="st4 st2 font49" text-anchor="middle" ref="c023">0</text>
 	<text x="520" y="306" class="st4 st2 font29">%</text>
-	<text x="618" y="306" class="st4 st2 font49" text-anchor="middle">1.16</text>
+	<text x="618" y="306" class="st4 st2 font49" text-anchor="middle" ref="c116">0</text>
 	<text x="676" y="306" class="st4 st2 font29">%</text>
 	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an4idt2.end-.5s"></animate>
 	<text x="489" class="st2 font23" text-anchor="middle" opacity="0">全台南市
@@ -79,16 +74,16 @@
 		<animate attributeName="r" dur=".5s" fill="freeze" from="2" to="16.5" begin="an4idt2.end-.5s"></animate>
 	</circle>
 	<text x="618" class="st2 font23" text-anchor="middle" opacity="0">善化區
-		<animate attributeName="y" dur=".5s" fill="freeze" from="130" to="114" begin="an4idt2.end-.5s"></animate>
-		<animate attributeName="opacity" dur=".5s" fill="freeze" from="0" to="1" begin="an4idt2.end-.5s"></animate>
+		<animate attributeName="y" dur=".8s" fill="freeze" from="130" to="114" begin="an4idt2.end-.3s"></animate>
+		<animate attributeName="opacity" dur=".8s" fill="freeze" from="0" to="1" begin="an4idt2.end-.3s"></animate>
 	</text>
 	<rect x="616" class="st4" width="4" height="0">
-		<animate  attributeName="y" dur=".5s" fill="freeze" from="248" to="141" begin="an4idt2.end-.5s"></animate>
-		<animate  attributeName="height" dur=".5s" fill="freeze" from="0" to="107" begin="an4idt2.end-.5s"></animate>
+		<animate  attributeName="y" dur=".8s" fill="freeze" from="248" to="141" begin="an4idt2.end-.3s"></animate>
+		<animate  attributeName="height" dur=".8s" fill="freeze" from="0" to="107" begin="an4idt2.end-.3s"></animate>
 	</rect>
 	<circle class="st4" cx="618">
-		<animate attributeName="cy" dur=".5s" fill="freeze" from="245" to="139" begin="an4idt2.end-.5s"></animate>
-		<animate attributeName="r" dur=".5s" fill="freeze" from="2" to="16.5" begin="an4idt2.end-.5s"></animate>
+		<animate attributeName="cy" dur=".8s" fill="freeze" from="245" to="139" begin="an4idt2.end-.3s"></animate>
+		<animate attributeName="r" dur=".8s" fill="freeze" from="2" to="16.5" begin="an4idt2.end-.3s"></animate>
 	</circle>
 </g>
 <g opacity="0">
@@ -126,7 +121,7 @@
 	<use xlink:href="#p435" x="898" y="143" opacity="0">
 		<animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="an4idt3.end+1s"></animate>
 	</use>
-	<text x="905" y="245" class="st4 st2 font49" text-anchor="end">7.08</text>
+	<text x="905" y="245" class="st4 st2 font49" text-anchor="end" ref="c708">0</text>
 	<text x="909" y="224" class="st2 font23">萬</text>
 	<text x="909" y="245" class="st2 font23">人</text>
 <animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an4idt3.end-.5s"></animate>
@@ -160,7 +155,7 @@
 	<use xlink:href="#p435" x="1091" y="143" opacity="0">
 		<animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="an4idt3.end+2.6s"></animate>
 	</use>
-	<text x="1068" y="245" class="st4 st2 font49" text-anchor="end">9.23</text>
+	<text x="1068" y="245" class="st4 st2 font49" text-anchor="end" ref="c923">0</text>
 	<text x="1070" y="224" class="st2 font23">萬</text>
 	<text x="1070" y="245" class="st2 font23">人</text>
 	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an4idt3.end+.5"></animate>
@@ -178,16 +173,54 @@
 	<use xlink:href="#circle4" class="st19" x="1333" y="227" stroke="#96d8ff"
 	 stroke-dasharray="560"
 	 stroke-dashoffset="560" >
-	 <animate  attributeName="stroke-dashoffset" dur="1.15s" fill="freeze" from="560" to="8" begin="an4idt4.end-.5s"></animate>
+	 <animate  attributeName="stroke-dashoffset" dur="1.5s" fill="freeze" from="560" to="8" begin="an4idt4.end-.2s"></animate>
 	</use>
 	<use xlink:href="#l2" x="1194" y="240" stroke-width="14" />
-	<text x="1327" y="246" class="st4 st2 font49" text-anchor="middle">99.63</text>
+	<text x="1327" y="246" class="st4 st2 font49" text-anchor="middle" ref="c9963">0</text>
 	<text x="1405" y="246" class="st2 font29">%</text>
 	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an4idt4.end-.5s"></animate>
 </g>
 </svg>
 
 </template>
+
+<script setup>
+import { onMounted, ref } from 'vue'
+import { CountUp } from 'countup.js'
+const c142 = ref(null)
+const c158 = ref(null)
+//
+const c023 = ref(null)
+const c116 = ref(null)
+//
+const c708 = ref(null)
+const c923 = ref(null)
+//
+const c9963 = ref(null)
+
+onMounted(() => {
+  const fn = (dom, num, decimalPlaces, duration, delay) => {
+    setTimeout(() => {
+      new CountUp(dom, num, {
+        decimalPlaces,
+        duration,
+        separator: ',',
+      }).start();
+    }, delay * 1000)
+  }
+  fn(c142.value,  1.42, 2, 0.5, 0.7);
+  fn(c158.value,  1.58, 2, 0.8, 1);
+  //
+  fn(c023.value,  0.23, 2, 0.5, 1.6);
+  fn(c116.value,  1.16, 2, 0.8, 2);
+  //
+  fn(c708.value,  7.08, 2, 0.5, 2.8);
+  fn(c923.value,  9.23, 2, 1.5, 3.5);
+  //
+  fn(c9963.value, 99.63, 2, 1.5, 3.8);
+});
+</script>
+
 
 <style lang="css" scoped>
 .st1{fill:#FFFFFF;}

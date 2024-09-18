@@ -1,27 +1,28 @@
 <template>
 <article ref="dom" class="s4">
+  <Fullview />
+  <img class="horizon" src="./s4/horizon.svg" />
   <div class="memo">實際空拍美化圖</div>
 
-  <img class="horizon" src="./s4/horizon.svg" />
-
-  <div ref="dom_title" class="title_box">
+  <div ref="dom_title" class="title_box pointer-events-none">
     <img src="./s4/title.svg" data-aos="fade-up" data-aos-duration="600" />
   </div>
 
-  <div ref="dom_hr" class="hr_box" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
+  <div ref="dom_hr" class="hr_box pointer-events-none" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="300">
     <HR class="hr" :props-color="sHrColor" />
   </div>
 
-  <div v-if="props.propsShow" class="svg_box">
-    <img v-if="isMobile" src="./s4/svg_mb.svg" class="absolute left-0 right-0 opacity-40" />
+  <div v-if="props.propsShow" class="svg_box pointer-events-none">
     <svgPc v-if="!isMobile" class="svg" />
     <svgMb v-else class="svg" />
   </div>
 
-  <div class="city_box" data-aos="fade-up">
+  <div class="city_box" data-aos="fade-up pointer-events-none">
     <img src="./s4/city.svg" />
   </div>
-  
+  <!-- 
+  <img src="./s4/03.png" class="absolute top-0 left-0 right-0 opacity-80" />
+  -->
 </article>
 </template>
 
@@ -32,6 +33,7 @@ import { defineProps, onMounted, onUnmounted, ref, nextTick, computed, getCurren
 import HR from './public/hr.vue';
 import svgPc from './s4/svg.vue';
 import svgMb from './s4/svg_mb.vue';
+import Fullview from '../components/fullview.vue';
 
 const dom = ref(null);
 const dom_title = ref(null);
@@ -82,13 +84,9 @@ const sHrColor = ref(
 <style lang="sass" scoped>
 @import @/assets/style/public.sass
 .s4
-  height: 58vw
+  height: 55.8vw
   position: relative
-  background:
-    image: url("./s4/bg.png")
-    repeat: no-repeat
-    size: cover
-    position: center 0
+  overflow: hidden
 
 img
   width: 100%
@@ -103,30 +101,38 @@ img
 
 .horizon
   position: absolute
-  width: 40%
+  width: 33%
   left: 50%
   transform: translateX(-50%)
-  top: 30px
+  top: 1.1vw
   // mix-blend-mode: multiply
 
 .title_box
-  padding-top: 6vw
+  position: absolute
+  top: 4vw
+  left: 0
+  right: 0
   text-align: center
+  z-index: 5
   img
     width: 24vw
 
 .hr_box
+  position: absolute
   width: 100%
   display: flex
   justify-content: center
-  padding-top: 3vw
+  top: 12.5vw
   .hr
     width: 45vw
 
-$w_svgpc: 70vw
+$w_svgpc: 77vw
 .svg_box
-  padding:
-    top: 1vw
+  position: absolute
+  z-index: 5
+  top: 15.4vw
+  left: 0
+  right: 0
   text-align: center
   img, .svg
     width: $w_svgpc
@@ -134,38 +140,41 @@ $w_svgpc: 70vw
 
 .city_box
   position: absolute
-  top: calc( 21vw + $w_svgpc * 0.233)
+  top: calc( 17.6vw + $w_svgpc * 0.233)
   width: 100%
   text-align: center
   img
-    width: 30vw
+    width: 34vw
 
 @media screen and (max-width: $bp)
   .s4
-    height: 185vw
+    height: 175vw
 
+  .viewbox
+    margin: -25vw 0 0
+    height: 200vw
   
   .horizon
     width: 72%
+    top: 3vw
 
   .title_box
-    padding-top: 17vw
+    top: 14vw
     img
       width: 43vw
 
   .hr_box
-    padding-top: 6vw
+    top: 32vw
     .hr
       width: 70vw
       
   .svg_box
-    padding:
-      top: 0vw
+    top: 36vw
     img, .svg
       width: 70%
 
   .city_box
-    top: 128vw
+    top: 110vw
     img
       width: 70vw
 </style>
