@@ -4,9 +4,6 @@
         <!-- <div class="mask" v-bind:class="{ hide: swiped }" v-if="$isMobile()">
             <img src="@/components/fullview/finger.png" alt="" srcset="">
         </div> -->
-        <div class="mask" v-if="$isMobile()">
-            <img src="@/components/fullview/finger.png" alt="" srcset="">
-        </div>
     </div>
 </template>
 

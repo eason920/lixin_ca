@@ -17,8 +17,11 @@
     <svgMb v-else class="svg" />
   </div>
 
-  <div class="city_box" data-aos="fade-up pointer-events-none">
+  <div class="city_box pointer-events-none" data-aos="fade-up">
     <img src="./s4/city.svg" />
+  </div>
+  <div class="finger absolute md:block pointer-events-none">
+    <img src="@/components/fullview/finger.png" alt="" srcset="">
   </div>
   <!-- 
   <img src="./s4/03.png" class="absolute top-0 left-0 right-0 opacity-80" />
@@ -145,7 +148,6 @@ $w_svgpc: 77vw
   text-align: center
   img
     width: 34vw
-
 @media screen and (max-width: $bp)
   .s4
     height: 175vw
@@ -177,4 +179,11 @@ $w_svgpc: 77vw
     top: 110vw
     img
       width: 70vw
+      
+  .finger
+    width: 95%
+    top: 110vw
+    left: 0
+    right: 0
+    margin: auto
 </style>
