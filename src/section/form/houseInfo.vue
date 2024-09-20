@@ -1,6 +1,6 @@
 <template>
   <!--  -->
-  <div class="house z-20 relative" v-if="info.houseInfos.length > 0">
+  <div class="house z-20 relative">
     <img src="../footer/title.png" />
     <img v-if="!isMobile" src="../public/logo_build.png" />
   </div>

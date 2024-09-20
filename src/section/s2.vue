@@ -13,7 +13,7 @@
   </div>
 
   <div ref="dom_logo" class="logo_box">
-    <img src="./s2/logo.png" data-aos="fade-in" data-aos-duration="3000" data-aos-delay="700" />
+    <img src="./s2/logo2.svg" data-aos="fade-in" data-aos-duration="3000" data-aos-delay="700" />
   </div>
   
   <div v-if="props.propsShow" class="svg_box relative">
@@ -124,10 +124,10 @@ img
     
 .logo_box
   // padding-top: 1vw
-  margin-top: -1vw
+  margin-top: 0
   text-align: center
   img
-    width: 32vw
+    width: 56vw
 
 .svg_box
   padding:
@@ -156,9 +156,9 @@ img
     padding-top: 7vw
       
   .logo_box
-    margin-top: 5vw
+    margin-top: 10vw
     img
-      width: 65vw
+      width: 90vw
 
   .svg_box
     padding:
