@@ -188,7 +188,7 @@ onMounted(() => {
   user-select: none
   pointer-events: none
   position: fixed
-  position: absolute
+  // position: absolute
   width: 100%
   height: 100%
   z-index: 12

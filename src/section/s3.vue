@@ -78,6 +78,7 @@ const sHrColor = ref(
 .s3
   height: 58vw
   position: relative
+  z-index: 12
   background:
     image: url("./s3/bg.webp")
     repeat: no-repeat

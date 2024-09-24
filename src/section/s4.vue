@@ -90,6 +90,7 @@ const sHrColor = ref(
   height: 55.8vw
   position: relative
   overflow: hidden
+  z-index: 12
 
 img
   width: 100%

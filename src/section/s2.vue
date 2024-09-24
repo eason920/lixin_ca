@@ -85,6 +85,7 @@ const sHrColor = ref(
 .s2
   height: 58vw
   position: relative
+  z-index: 12
   background:
     image: url("./s2/bg.webp")
     repeat: no-repeat

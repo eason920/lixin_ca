@@ -29,6 +29,7 @@
       @sec_height="fnS4SecH"
       @el_height="fnS4ElH"
     />
+    <S4_1 />
     <S5 />
     <S6 />
     <S7 />
@@ -91,6 +92,7 @@ import S1 from "@/section/s1.vue"
 import S2 from "@/section/s2.vue"
 import S3 from "@/section/s3.vue"
 import S4 from "@/section/s4.vue"
+import S4_1 from "@/section/s4_abband.vue"
 import S5 from "@/section/s5.vue"
 import S6 from "@/section/s6.vue"
 import S7 from "@/section/s7.vue"
