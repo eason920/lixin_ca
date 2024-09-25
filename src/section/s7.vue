@@ -5,13 +5,13 @@
 
     <div class="main">
       <div class="main_pic">
-        <img src="./s7/pic.jpg">
-        <span>情境示意圖</span>
+        <img src="./s7/pic.webp">
+        <span>美麗城安-實景拍攝美化圖</span>
       </div>
       <div class="main_msg">
         <img class="pic_title" data-aos="fade-up" src="./s7/title.svg" data-aos-delay="100" />
         <p data-aos="fade-up" data-aos-delay="300" >
-          SGS集團為世界上測試、驗證、檢驗服務的領導者，透過全方位的建物認證，確保建物的安全性與合規性。住戶更可獲得「建物生產履歷報告書」，全面掌握家的所有數值。
+          城安相信，信任是一切基礎。透過國際標準的認證、換位思考的規劃、透明互信的服務，擘劃城安建設的台南首案。立足兼具前景與機能的南科善化，透過 RENEW 五大建築新基準，在善化豐饒城中心，為世界創造更好的明天！
         </p>
 
         <img class="pic_logo" src="./s7/logo_ca.svg" data-aos="fade-up" data-aos-delay="500" />
@@ -86,7 +86,7 @@ img
     color: #fff
     right: 2%
     bottom: 2.5%
-    font-size: 8px
+    font-size: 10px
 
 .main_msg
   width: 50%

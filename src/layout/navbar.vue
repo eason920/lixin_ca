@@ -1,8 +1,10 @@
 <template>
   <ul v-if="!isMobile" class="nav">
+  <!--
     <li @click="fnListActive(0, info.navList[0])">
       <img src="../section/public/1.svg" />
     </li>
+    -->
     <li @click="fnListActive(1, info.navList[1])">
       <img src="../section/public/2.svg" />
     </li>
