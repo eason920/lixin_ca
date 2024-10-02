@@ -213,7 +213,7 @@ onMounted(() => {
     width: 70vw 
 
   .logo_build
-    width: 30vw
+    width: 46vw
     bottom: auto
     top: calc(60% + 15vw)
 
