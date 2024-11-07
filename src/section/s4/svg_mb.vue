@@ -169,8 +169,8 @@
 	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an4midt3.end" id="an4midt4"></animate>
 </g>
 <g opacity="0">
-	<use xlink:href="#circle4" class="st19" x="190" y="223" stroke="#7F7F7F" />
-	<use xlink:href="#circle4" class="st19" x="190" y="223" stroke="#96d8ff"
+	<use xlink:href="#circle4" class="st19" x="187" y="223" stroke="#96d8ff" />
+	<use xlink:href="#circle4" class="st19" x="187" y="223" stroke="#e85a29"
 	 stroke-dasharray="202"
 	 stroke-dashoffset="202" >
 	 <animate  attributeName="stroke-dashoffset" dur="1.5s" fill="freeze" from="202" to="2.5" begin="an4midt4.end-.2s"></animate>
@@ -235,7 +235,7 @@ font-family: "Noto Sans TC";}
 .st8{opacity:0.4;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-width:0.4;}
 .st13{fill:none;stroke:#E85A29;stroke-width:.5;}
 .st14{fill:none;stroke:#E85A29;stroke-width:30;stroke-miterlimit:10;}
-.st19{fill:none;stroke-width:18;}
+.st19{fill:none;stroke-width:10;}
 .st23{fill:none;stroke-width:48;}
 </style>
 
