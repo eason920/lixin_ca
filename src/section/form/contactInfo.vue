@@ -205,7 +205,8 @@ $blue: #172589;
     height: sizem(63);
     gap: sizem(1);
     //box-shadow: 0 0 sizem(50) rgba(0, 0, 0, 0.501);
-    background:$blue;
+    //background:$blue;
+    background: linear-gradient(180deg, #FF5406 1.83%, rgba(254, 119, 2, 0.30) 98.97%);
 
     .contact-item {
       height: 100%;      

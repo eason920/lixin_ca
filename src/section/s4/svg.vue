@@ -173,11 +173,11 @@
 	<use xlink:href="#circle4" class="st19" x="1327" y="227" stroke="#e85a29"
 	 stroke-dasharray="560"
 	 stroke-dashoffset="560" >
-	 <animate  attributeName="stroke-dashoffset" dur="1.5s" fill="freeze" from="560" to="8" begin="an4idt4.end-.2s"></animate>
+	 <animate  attributeName="stroke-dashoffset" dur="1.5s" fill="freeze" from="560" to="0" begin="an4idt4.end-.2s"></animate>
 	</use>
-	<use xlink:href="#l2" x="1194" y="240" stroke-width="14" />
-	<text x="1327" y="246" class="st4 st2 font49" text-anchor="middle" ref="c9963">0</text>
-	<text x="1405" y="246" class="st2 font29">%</text>
+	<text transform="matrix(1 0 0 1 1398 258)" class="st2 font21"><tspan text-anchor="end" ref="c100">0</tspan><tspan>%出租完畢</tspan></text>
+	<text transform="matrix(1 0 0 1 1377 229)" text-anchor="end" class="st4 st2 font35" ref="c540">0</text>
+	<text transform="matrix(1 0 0 1 1380 213)" class="st4 st2 font19"><tspan x="0" y="0">公</tspan><tspan x="0" y="19">頃</tspan></text>
 	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an4idt4.end-.5s"></animate>
 </g>
 </svg>
@@ -196,7 +196,8 @@ const c116 = ref(null)
 const c708 = ref(null)
 const c923 = ref(null)
 //
-const c9963 = ref(null)
+const c100 = ref(null)
+const c540 = ref(null)
 
 onMounted(() => {
   const fn = (dom, num, decimalPlaces, duration, delay) => {
@@ -217,7 +218,8 @@ onMounted(() => {
   fn(c708.value,  7.08, 2, 0.5, 2.8);
   fn(c923.value,  9.23, 2, 1.5, 3.5);
   //
-  fn(c9963.value, 99.63, 2, 1.5, 3.8);
+  fn(c100.value, 100, 0, 1.5, 4);
+  fn(c540.value, 540.87, 2, 1.5, 3.8);
 });
 </script>
 
@@ -230,8 +232,10 @@ font-family: "Noto Sans TC";}
 .font49{font-size:52px;font-weight: 900;}
 .font43{font-size:43px;font-weight: 900;}
 .font33{font-size:33px;font-weight: 900;}
+.font35{font-size:35px;font-weight: 900;}
 .font19{font-size:19px;font-weight: 500;letter-spacing: .06em;}
 .font23{font-size:23px;font-weight: 500;letter-spacing: .06em;}
+.font21{font-size:21px;font-weight: 900;letter-spacing: 0em;}
 .font29{font-size:29px;font-weight: 500;letter-spacing: .06em;}
 .st4{fill:#E85A29;}
 .st8{opacity:0.2;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}

@@ -129,7 +129,9 @@ img
 @media screen and (max-width: $bp)
   .s3
     height: 185vw
-  
+
+  .memo
+    font-size: 2vw
   
   .horizon
     width: 100%

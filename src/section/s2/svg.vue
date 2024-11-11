@@ -1,6 +1,6 @@
 <template>
   <svg version="1.1" id="ani" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 0 1515 410">
+    viewBox="0 0 1515 430">
     <rect fill="#0000" x="-27" y="-117" width="1573" height="604" />
     <defs>
       <linearGradient id="l0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="286" y2="0">
@@ -50,36 +50,51 @@
       <animate attributeName="height" dur="1.5s" fill="freeze" from="0" to="169" begin="anid1.end-.5s"></animate>
     </rect>
     <g opacity="0">
-      <text x="485" y="34" class="st1 st2 st3">台積電全球市占率</text>
+      <text x="485" y="34" class="st1 st2 st3">全球人工智能產值預測</text>
       <use xlink:href="#l1" x="429" y="0" />
       <path class="st13" d="M476.3,25.1c0,7.3-5.9,13.1-13.1,13.1S450,32.4,450,25.1S455.9,12,463.1,12S476.3,17.9,476.3,25.1z M463.1,12
   		c-3.9,0-7,5.9-7,13.1s3.2,13.1,7,13.1s7-5.9,7-13.1S467,12,463.1,12z M463.1,38.3V12 M476.3,25.1c0-3.9-5.9-7-13.1-7
   		s-13.1,3.2-13.1,7s5.9,7,13.1,7S476.3,29,476.3,25.1z M450,25.1h26.3" />
       <animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="anidt1.end" id="anidt2"></animate>
     </g>
-    <g opacity="0">
-      <text x="492" y="180" class="st1 st2 font19" text-anchor="middle">總市佔率</text>
-      <circle class="st19" cx="623.5" cy="177.5" r="54.5" />
-      <use xlink:href="#circle1" class="st20" x="623.5" y="177.5" stroke-dasharray="684" stroke-dashoffset="684">
-        <animate attributeName="stroke-dashoffset" dur="1.5s" fill="freeze" from="684" to="474" begin="anid2.end-.5s">
-        </animate>
-      </use>
-      <text x="612" y="195" class="st1 st2 font49" text-anchor="middle" ref="c612">0</text>
-      <text x="665" y="195" class="st1 st2 font33">%</text>
-      <animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="anidt2.end-.5s" id="anid2"></animate>
-    </g>
-    <g opacity="0">
-      <text x="492" y="331" class="st1 st2 font19" text-anchor="middle">7奈米以下</text>
-      <text x="492" y="360" class="st1 st2 font19" text-anchor="middle">製成市佔率</text>
-      <circle class="st19" cx="623.5" cy="337.5" r="54.5" />
-      <use xlink:href="#circle1" class="st20" x="623.5" y="337.5" stroke-dasharray="684" stroke-dashoffset="684">
-        <animate attributeName="stroke-dashoffset" dur="1.5s" fill="freeze" from="684" to="378" begin="anid3.end-.5s">
-        </animate>
-      </use>
-      <text x="612" y="354" class="st1 st2 font49" text-anchor="middle" ref="c90">0</text>
-      <text x="645" y="354" class="st1 st2 font33">%</text>
-      <animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="anid2.end-.5s" id="anid3"></animate>
-    </g>
+<g opacity="0">
+	<path class="st8" d="M494.2,357.1h210 M494.2,342.6h210 M494.2,328.1h210 M494.2,313.6h210 M494.2,299.1h210 M494.2,284.6h210
+		 M494.2,270.1h210 M494.2,255.6h210 M494.2,241.1h210 M494.2,226.6h210 M494.2,212.1h210 M494.2,197.6h210 M494.2,183.1h210
+		 M494.2,165.9h210 M494.2,148.7h210 M494.2,131.5h210 M494.2,114.3h210"/>
+	<text x="495" y="104" class="st1 st2 font19" >單位：百萬美元</text>
+  <g class="st1 st2 font10" text-anchor="middle">
+		<text x="504" y="355">95,603</text>
+		<text x="520" y="343">142,320</text>
+		<text x="540" y="330">207,902</text>
+		<text x="561" y="317">298,247</text>
+		<text x="578" y="306">420,466</text>
+		<text x="601" y="282">582,949</text>
+		<text x="620" y="250">795,385</text>
+		<text x="637" y="210">1,068,718</text>
+		<text x="657" y="159">1,415,055</text>
+		<text x="688" y="97">1,847,496</text>
+	</g>
+	<g class="st1 st2 font10">
+		<text transform="matrix(0 1 -1 0 506 378)">2021</text>
+		<text transform="matrix(0 1 -1 0 525.5 378)">2022</text>
+		<text transform="matrix(0 1 -1 0 545 378)">2023</text>
+		<text transform="matrix(0 1 -1 0 564.5 378)">2024</text>
+		<text transform="matrix(0 1 -1 0 584 378)">2025</text>
+		<text transform="matrix(0 1 -1 0 604 378)">2026</text>
+		<text transform="matrix(0 1 -1 0 624.5 378)">2027</text>
+		<text transform="matrix(0 1 -1 0 644.5 378)">2028</text>
+		<text transform="matrix(0 1 -1 0 665.5 378)">2029</text> 
+		<text transform="matrix(0 1 -1 0 685.5 378)" >2030</text>
+	</g>
+	<path class="st4" d="M515.6,371.8h-10.5v-14h10.5V371.8z M534,351h-10.5v20.8H534V351z M552.7,341.4h-10.5v30.4h10.5V341.4z
+		 M573.2,328.1h-10.5v43.6h10.5V328.1z M593.4,310.4h-10.5v61.5h10.5V310.4z M614,286.7h-10.5V372H614V286.7z M634.3,255.7h-10.5
+		V372h10.5V255.7z M653.2,215.7h-10.5V372h10.5V215.7z M674.6,165h-10.5v206.9h10.5V165z M694.4,101.7h-10.5v270.2h10.5V101.7z"/>
+	<line class="st9" stroke-width="1.7" x1="494.2" y1="371.6" x2="704.2" y2="371.6"/>
+	<text x="470" y="422" class="st1 st2 font10" opacity=".5">資料來源：Next Move Strategy Consulting 2023/1</text>
+  
+  <animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="anidt2.end-.5s"></animate>
+</g>
+
     <g opacity="0">
       <text x="869" y="34" class="st1 st2 st3">台積電全台營收比例</text>
       <use xlink:href="#l1" x="827" y="0" />
@@ -109,21 +124,25 @@
       <circle class="st23" stroke="#7F7F7F" cx="971" cy="256" r="65" />
       <use xlink:href="#circle2" class="st23" stroke="#378ED0" x="971" y="256" stroke-dasharray="408"
         stroke-dashoffset="408">
-        <animate attributeName="stroke-dashoffset" dur="1.5s" fill="freeze" from="408" to="115" begin="anidt3.end-.5s">
+       <animate attributeName="stroke-dashoffset" dur="1.5s" fill="freeze" from="408" to="97" begin="anidt3.end-.5s"> 
         </animate>
       </use>
       <use xlink:href="#circle2" class="st23" stroke="#E85A29" x="971" y="256" stroke-dasharray="408"
         stroke-dashoffset="408">
-        <animate attributeName="stroke-dashoffset" dur="1.15s" fill="freeze" from="408" to="185" begin="anidt3.end-.5s">
+        <animate attributeName="stroke-dashoffset" dur="1.15s" fill="freeze" from="408" to="243" begin="anidt3.end-.5s">
         </animate>
       </use>
-      <text x="890" y="220" class="st1 st2 font23" opacity=".5">其他</text>
-      <text x="818" y="332" class="st1 st2 font23">竹科</text>
-      <text x="993" y="267" class="st1 st2 font23">南科</text>
-      <text x="1105" y="274" class="st1 st2 font49" text-anchor="end" ref="c55">0</text>
-      <text x="1105" y="274" class="st1 st2 font33">%</text>
-      <text x="930" y="336" class="st1 st2 font49" text-anchor="end" ref="c17">0</text>
-      <text x="930" y="336" class="st1 st2 font33">%</text>
+      <g class="st1 st2">
+        <text transform="matrix(1 0 0 1 1015 199)" class="font19">南科</text>
+        <text transform="matrix(1 0 0 1 995 227)" class="font16">15,855億元</text>
+        <text transform="matrix(1 0 0 1 1090 265)" class="font33"><tspan text-anchor="end" ref="c402">0</tspan><tspan>%</tspan></text>
+        <text transform="matrix(1 0 0 1 915 290)" class="font19">竹科</text>
+        <text transform="matrix(1 0 0 1 885 317)" class="font16">14,200.53億元</text>
+        <text transform="matrix(1 0 0 1 975 355)" class="font33"><tspan text-anchor="end" ref="c36">0</tspan><tspan>%</tspan></text>
+        <text transform="matrix(1 0 0 1 900 170)" class="font19">中科</text>
+        <text transform="matrix(1 0 0 1 868 195)" class="font16">9,383.96億元</text>
+        <text transform="matrix(1 0 0 1 967 234)" class="font33"><tspan text-anchor="end" ref="c238">0</tspan><tspan>%</tspan></text>
+      </g>
       <animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="anidt3.end-.5s"></animate>
     </g>
     <g opacity="0">
@@ -136,139 +155,40 @@
   		c1.3,0,1.3-2,0-2h-2.3v-2L1282.6,24.4z M1277.6,31.9h-13v-13h13V31.9z M1275.9,30.3h-9.8v-9.8h9.8V30.3z" />
       <animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="anidt3.end" id="anidt4"></animate>
     </g>
-    <g opacity="0">
-      <text x="1425" y="190" class="st1 st2 font19">晶圓廠房</text>
-      <text x="1487" y="240" class="st1 st2 font23">座</text>
-      <text x="1483" y="240" class="st4 st2 font49" text-anchor="end" ref="c20">0</text>
-      <animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="anidt4.end-.5s" id="anid4"></animate>
-      <use xlink:href="#p41" x="1213" y="132" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end"></animate>
-      </use>
-      <use xlink:href="#p41" x="1253" y="132" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+.2s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1292" y="132" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+.4s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1331" y="132" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+.6s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1370" y="132" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+.8s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1213" y="161" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+1s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1253" y="161" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+1.2s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1292" y="161" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+1.4s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1331" y="161" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+1.6s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1370" y="161" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+1.8s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1213" y="190" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+2s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1253" y="190" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+2.2s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1292" y="190" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+2.4s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1331" y="190" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+2.6s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1370" y="190" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+2.8s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1213" y="219" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+3s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1253" y="219" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+3.2s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1292" y="219" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+3.4s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1331" y="219" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+3.6s"></animate>
-      </use>
-      <use xlink:href="#p41" x="1370" y="219" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anidt4.end+3.8s"></animate>
-      </use>
-    </g>
-    <g opacity="0">
-      <text x="1425" y="337" class="st1 st2 font19">從業人員</text>
-      <text x="1495" y="390" class="st1 st2 font19">人</text>
-      <text x="1451" y="388" class="st4 st2 font43">萬</text>
-      <text x="1451" y="390" class="st4 st2 font49" text-anchor="end" ref="c2">0</text>
-      <animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="anidt4.end"></animate>
-      <use xlink:href="#p42" x="1213" y="298" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end"></animate>
-      </use>
-      <use xlink:href="#p42" x="1232.5" y="298" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+.2s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1252" y="298" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+.4s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1271.5" y="298" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+.6s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1291" y="298" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+.8s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1310.5" y="298" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+1s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1330" y="298" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+1.2s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1349.5" y="298" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+1.4s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1369" y="298" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+1.6s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1388.5" y="298" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+1.8s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1213" y="348" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+2s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1232.5" y="348" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+2.2s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1252" y="348" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+2.4s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1271.5" y="348" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+2.6s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1291" y="348" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+2.8s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1310.5" y="348" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+3s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1330" y="348" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+3.2s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1349.5" y="348" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+3.4s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1369" y="348" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+3.6s"></animate>
-      </use>
-      <use xlink:href="#p42" x="1388.5" y="348" opacity="0">
-        <animate attributeName="opacity" dur=".2s" fill="freeze" from="0" to="1" begin="anid4.end+3.8s"></animate>
-      </use>
-    </g>
+<g opacity="0">
+	<path class="st8" d="M1508,342.2h-250.7 M1508,309.3h-250.7 M1508,276.4h-250.7 M1508,243.4h-250.7 M1508,210.5h-250.7 M1508,177.6h-250.7 M1508,144.7h-250.7 M1508,111.7h-250.7"/>
+	<path class="st4" d="M1485.6,116.2h11.9v258.9h-11.9V116.2z M1461.5,375.1h11.9V132.3h-11.9V375.1z M1437.4,375.1h11.9V197.5
+			h-11.9V375.1z M1413.3,375.1h11.9v-145h-11.9V375.1z M1317,375.1h11.9V238.3H1317V375.1z M1292.9,375.1h11.9V260.5h-11.9V375.1z
+			 M1268.8,375.1h11.9v-107h-11.9V375.1z M1389.2,375.1h11.9V256.5h-11.9V375.1z M1365.2,375.1h11.9V245.7h-11.9V375.1z
+			 M1341.1,375.1h11.9V223.3h-11.9V375.1z"/>
+	<g class="st1 st2 font10">
+		<text transform="matrix(0 1 -1 0 1295.6492 380)">2015</text>
+		<text transform="matrix(0 1 -1 0 1319.8152 380)">2016</text>
+		<text transform="matrix(0 1 -1 0 1343.9773 380)">2017</text>
+		<text transform="matrix(0 1 -1 0 1368.1414 380)">2018</text>
+		<text transform="matrix(0 1 -1 0 1392.3035 380)">2019</text>
+		<text transform="matrix(0 1 -1 0 1416.4695 380)">2020</text>
+		<text transform="matrix(0 1 -1 0 1440.6335 380)">2021</text>
+		<text transform="matrix(0 1 -1 0 1464.7957 380)">2022</text>
+		<text transform="matrix(0 1 -1 0 1488.9578 380)">2023</text>
+		<text transform="matrix(0 1 -1 0 1271.4851 380)">2014</text>
+	</g>
+	<g class="st1 st2 font10">
+	<text transform="matrix(0 1 -1 0 1464.1257 137.8007)">14,833</text>
+	<text transform="matrix(0 1 -1 0 1440.0457 202.1942)">10,948</text>
+	<text transform="matrix(0 1 -1 0 1415.9646 234.4838)">8,477</text>
+	<text transform="matrix(0 1 -1 0 1391.8855 261.4359)">7,432</text>
+	<text transform="matrix(0 1 -1 0 1295.5652 262.8549)">7,151</text>
+	<text transform="matrix(0 1 -1 0 1271.4851 272.9261)">6,394</text>
+	<text transform="matrix(0 1 -1 0 1367.8054 251.5668)">7,956</text>
+	<text transform="matrix(0 1 -1 0 1343.7253 229.266)">8,787</text>
+	<text transform="matrix(0 1 -1 0 1319.6462 244.7377)">8,295</text>
+	<text transform="matrix(0 1 -1 0 1488.2058 121.2792)">15,855</text>
+	</g>
+	<line class="st9" stroke-width="1.7" x1="1257.2" y1="375.1" x2="1508" y2="375.1"/>
+  
+  <animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="anidt4.end-.5s"></animate>
+</g>
   </svg>
 </template>
 
@@ -279,7 +199,9 @@ const c1180 = ref(null)
 const c13000 = ref(null);
 const c612 = ref(null);
 const c90 = ref(null);
-const c55 = ref(null);
+const c402 = ref(null);
+const c36 = ref(null);
+const c238 = ref(null);
 const c17 = ref(null);
 const c20 = ref(null);
 const c2 = ref(null);
@@ -299,7 +221,9 @@ onMounted(() => {
   fn(c13000.value, 11300, 0, 2, 500);
   fn(c612.value,    61.2, 1, 2, 1500);
   fn(c90.value,       90, 0, 2, 2200);
-  fn(c55.value,       55, 0, 3, 2400);
+  fn(c402.value,       40.2, 1, 2, 2400);
+  fn(c36.value,       36, 0, 2, 2400);
+  fn(c238.value,       23.5, 1, 2, 2400);
   fn(c17.value,       17, 0, 1, 3200);
   fn(c20.value,       20, 0, 2, 3800);
   fn(c2.value,       1.9, 1, 3, 4000);
@@ -344,6 +268,16 @@ onMounted(() => {
   font-weight: 500;
   letter-spacing: .06em;
 }
+.font16 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
+.font10 {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .06em;
+}
 
 .font23 {
   font-size: 23px;
@@ -357,6 +291,12 @@ onMounted(() => {
 
 .st8 {
   opacity: 0.2;
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-miterlimit: 10;
+}
+
+.st9 {
   fill: none;
   stroke: #FFFFFF;
   stroke-miterlimit: 10;

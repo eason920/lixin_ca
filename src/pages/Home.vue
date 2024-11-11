@@ -14,6 +14,9 @@
     <S1
       @sec_height="fnS1SecH"
     />
+    <Map
+    @sec_height="fnMapSecH"
+    />
     <S2
       :props-show="bShow2" 
       @sec_height="fnS2SecH"
@@ -89,6 +92,7 @@ img {
 <script setup>
 import info from "@/info"
 import S1 from "@/section/s1.vue"
+import Map from "@/section/map.vue"
 import S2 from "@/section/s2.vue"
 import S3 from "@/section/s3.vue"
 import S4 from "@/section/s4.vue"
@@ -114,6 +118,10 @@ let nS1SecH = ref(null);
 const fnS1SecH = (h) => {
   console.log('s1 sech', h);
   nS1SecH = h;
+}
+const fnMapSecH = (h) => {
+  nS1SecH = nS1SecH + h;
+  console.log('map sech', nS1SecH);
 }
 //
 let nS2SecH = ref(null);

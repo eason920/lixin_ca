@@ -29,7 +29,7 @@ $p:.7vw
   right: 0
   bottom: 5vw
   background:
-    image: repeating-linear-gradient(to right, rgba(0,129,253,100%),  rgba(11,154,244,30%) 100%)
+    image: repeating-linear-gradient(to right, #FF5406 0%, rgba(254, 119, 2, 0.30) 100%)
   z-index: 21
   padding: $p
   width:3.8vw

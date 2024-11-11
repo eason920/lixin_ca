@@ -11,7 +11,7 @@
 	</linearGradient>
 	<path id="l1" fill="none" stroke="url(#l0)" d="M0,0.5h105 M0,17.5h105"/>
 	<path id="l2" fill="none" stroke="url(#l0)" d="M0,0.5h105"/>
-	<circle id="circle4" cx="0" cy="0" r="32" transform="rotate(-90)"></circle>
+	<circle id="circle4" cx="0" cy="0" r="45" transform="rotate(-90)"></circle>
 	<path id="p435" class="st4" d="M2.2,2.3C0.7,2.3,0.7,0,2.2,0S3.7,2.3,2.2,2.3z M2.3,8.2v3.4c0,0.6,1.1,0.6,1.1,0V4.5c0-0.1,0.2-0.1,0.2,0v1.9
 	c0,0.5,0.8,0.5,0.8,0V3.2c0-0.4-0.3-0.7-0.7-0.7h-3C0.3,2.5,0,2.8,0,3.2v3.2c0,0.5,0.8,0.5,0.8,0V4.5c0-0.1,0.2-0.1,0.2,0v7.1
 	c0,0.6,1.1,0.6,1.1,0V8.2C2.1,8,2.3,8,2.3,8.2z"/>
@@ -169,15 +169,15 @@
 	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an4midt3.end" id="an4midt4"></animate>
 </g>
 <g opacity="0">
-	<use xlink:href="#circle4" class="st19" x="187" y="223" stroke="#96d8ff" />
-	<use xlink:href="#circle4" class="st19" x="187" y="223" stroke="#e85a29"
-	 stroke-dasharray="202"
-	 stroke-dashoffset="202" >
-	 <animate  attributeName="stroke-dashoffset" dur="1.5s" fill="freeze" from="202" to="2.5" begin="an4midt4.end-.2s"></animate>
+	<use xlink:href="#circle4" class="st19" x="191" y="213" stroke="#96d8ff" />
+	<use xlink:href="#circle4" class="st19" x="191" y="213" stroke="#e85a29"
+	 stroke-dasharray="283"
+	 stroke-dashoffset="283" >
+	 <animate  attributeName="stroke-dashoffset" dur="1.5s" fill="freeze" from="283" to="0" begin="an4midt4.end-.2s"></animate>
 	</use>
-	<use xlink:href="#l2" x="139" y="226" stroke-width="5" />
-	<text x="187" y="229" class="st4 st2 font49" text-anchor="middle" ref="c9963">0</text>
-	<text x="215" y="229" class="st2 font29">%</text>
+	<text transform="matrix(1 0 0 1 225 229)" class="st2 font21"><tspan text-anchor="end" ref="c100">0</tspan><tspan>%出租完畢</tspan></text>
+	<text transform="matrix(1 0 0 1 218 214)" text-anchor="end" class="st4 st2 font35" ref="c540">0</text>
+	<text transform="matrix(1 0 0 1 219 207)" class="st4 st2 font23"><tspan x="0" y="0">公</tspan><tspan x="0" y="8">頃</tspan></text>
 	<animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="an4midt4.end-.5s"></animate>
 </g>
 </svg>
@@ -195,7 +195,8 @@ const c116 = ref(null)
 const c708 = ref(null)
 const c923 = ref(null)
 //
-const c9963 = ref(null)
+const c100 = ref(null)
+const c540 = ref(null)
 
 onMounted(() => {
   const fn = (dom, num, decimalPlaces, duration, delay) => {
@@ -216,7 +217,8 @@ onMounted(() => {
   fn(c708.value,  7.08, 2, 0.5, 2.8);
   fn(c923.value,  9.23, 2, 1.5, 3.5);
   //
-  fn(c9963.value, 99.63, 2, 1.5, 3.8);
+  fn(c100.value, 100, 0, 1.5, 4);
+  fn(c540.value, 540.87, 2, 1.5, 3.8);
 });
 </script>
 
@@ -228,8 +230,10 @@ font-family: "Noto Sans TC";}
 .font49{font-size:18px;font-weight: 900;}
 .font43{font-size:17px;font-weight: 900;}
 .font33{font-size:12px;font-weight: 900;}
+.font35{font-size:18px;font-weight: 900;}
 .font19{font-size:6.5px;font-weight: 500;letter-spacing: .06em;}
 .font23{font-size:8.5px;font-weight: 500;letter-spacing: .06em;}
+.font21{font-size:10px;font-weight: 900;letter-spacing: 0em;}
 .font29{font-size:11px;font-weight: 500;letter-spacing: .06em;}
 .st4{fill:#E85A29;}
 .st8{opacity:0.4;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-width:0.4;}
