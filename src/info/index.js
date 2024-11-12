@@ -10,9 +10,9 @@ export default {
     },
     address1: "",//按鈕區的--- 如空白會只呈現地址
     address2: "",//map點下確認的--- 如空白會顯示"導航地址"
-    address: "台南市善化區自由路13號旁", //如空白  地圖及導航按鈕會不顯示
+    address: "台南市善化區自由路17號", //如空白  地圖及導航按鈕會不顯示
     googleSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.0807364212137!2d120.29100030000001!3d23.130724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7b8729ab13cb%3A0x4a6ed60df5569dda!2zNzQx5Y-w5Y2X5biC5ZaE5YyW5Y2A6Ieq55Sx6LevMTfomZ8!5e0!3m2!1szh-TW!2stw!4v1731401146839!5m2!1szh-TW!2stw",
-    googleLink: "https://maps.app.goo.gl/yHDsxm4qPHQ4XE6W",
+    googleLink: "https://maps.app.goo.gl/RDRggBWHMNnyKNiA6",
     phone: "06-337-6688",
     fbLink: "https://www.facebook.com/61565692594495/",
     fbMessage: "https://m.me/61565692594495/",
