@@ -1,8 +1,7 @@
 <template>
   <!--  -->
   <div class="house z-20 relative">
-    <img src="../footer/title.png" />
-    <img v-if="!isMobile" src="../public/logo_build.png" />
+    <img src="../footer/title.svg" />
   </div>
 
   <div class="footer relative z-20 flex items-center justify-center w-full h-[40px] bg-[#302626]">
@@ -21,12 +20,14 @@
 
 .house {
   color: #FFF;
-  background: #FFF {
+ /* background: #FFF {
     image: url("../footer/bg.png");
     position: center 0;
     size: 95% auto;
     repeat: no-repeat;
-  }
+  }*/
+  background:radial-gradient(25.17% 49.82% at 50.18% -10.93%,
+   #db3700 0%, #ff400082 25%, #fc3f0000 100%);
   display: flex;
   flex-direction: column;
 

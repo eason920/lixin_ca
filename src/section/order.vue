@@ -26,7 +26,8 @@
               姓名
               <span v-if="!bypass.includes('name')">*</span>
             </span>
-            <input type="text" class="input w-full rounded-none" :value="formData.name"
+            <input type="text"
+                placeholder="請輸入姓名" class="input w-full rounded-none" :value="formData.name"
               @input="(event) => (formData.name = event.target.value)" />
           </label>
 
@@ -35,7 +36,8 @@
               連絡電話
               <span v-if="!bypass.includes('phone')">*</span>
             </span>
-            <input type="text" class="input w-full rounded-none" :value="formData.phone"
+            <input type="text"
+              placeholder="請輸入電話" class="input w-full rounded-none" :value="formData.phone"
               @input="(event) => (formData.phone = event.target.value)" />
           </label>
 
@@ -66,7 +68,8 @@
               電子信箱
               <span v-if="!bypass.includes('email')">*</span>
             </span>
-            <input type="text" class="input w-full rounded-none" :value="formData.email"
+            <input type="text"
+              placeholder="請輸入電子信箱" class="input w-full rounded-none" :value="formData.email"
               @input="(event) => (formData.email = event.target.value)" />
           </label>
 
@@ -76,7 +79,7 @@
               <span v-if="!bypass.includes('city')">*</span>
             </span>
             <select class="select w-full rounded-none" v-model="formData.city">
-              <!-- <option value="" selected disabled>請選擇城市</option> -->
+              <!--  --><option value="" selected disabled>請選擇城市</option>
               <option v-for="city in cityList" :value="city.value" :key="city">
                 {{ city.label }}
               </option>
@@ -89,7 +92,7 @@
               <span v-if="!bypass.includes('area')">*</span>
             </span>
             <select class="select w-full rounded-none" v-model="formData.area">
-              <!-- <option value="" selected disabled>請選擇地區</option> -->
+              <!--  --><option value="" selected disabled>請選擇地區</option>
               <option v-for="area in areaList" :value="area.value" :key="area">
                 {{ area.label }}
               </option>
@@ -160,10 +163,8 @@
   width: 100%
   padding-top: 0
   font-size: size(15)
-  background:
-    image: url("./form/bg.webp")
-    size: 100% auto
-  
+  background: linear-gradient(90deg, #FC4C02 0%, #FF7D00 100%)
+
   .order-title 
     font-size: size(40)
     font-weight: 700
@@ -212,6 +213,8 @@
       flex: 1
       height: auto
       //  width: size(419)
+      textarea::placeholder
+        color: #000c
 
     // PC 版表格的中柱
     &::after 
@@ -238,11 +241,12 @@
         > span
           color: #F00
           font-size:1em
-      
       input,select
         background: none
         flex: 1
         font-size: inherit
+        &::placeholder
+          color: #000c
         &:focus
           outline: none
       option
@@ -273,7 +277,7 @@
       height: 100%
       transform: translateY(0)
 
-  $blue: #172589
+  $blue: #0014E6
   .send 
     font-size: 20px
     letter-spacing: 0.9em
@@ -333,8 +337,6 @@
     width: 100%
     padding-bottom: sizem(63)
     font-size: sizem(14)
-    background:
-      image: url("./form/bg_m.webp")
 
     .order-title-img 
       width: sizem(315)
