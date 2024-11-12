@@ -97,7 +97,7 @@
       </animate>
     </g>
     <g opacity="0">
-      <text x="26" y="184" class="st1 st2 st3">台積電全台營收比例</text>
+      <text x="26" y="184" class="st1 st2 st3">全台科技園區營收比例</text>
       <use xlink:href="#l1" x="11" y="172" />
       <path class="st4" d="M23.4,176.2c-0.2,0-0.4-0.2-0.3-0.4c-0.3,0.1-0.4,0-0.5-0.1c0-0.1-0.1,0,0,0c0,0-0.1,0.1-0.1,0
   		c0.1-0.1-0.3-0.1-0.2-0.2c-0.2,0-0.4-0.7-0.9-0.1c-0.4,0.7-1.5,0.4-1.7,1.4c0.1,0-0.1,0,0,0.1c-0.5,0.6-2.2,2.9-1.9,2.9
@@ -135,7 +135,7 @@
       <animate attributeName="opacity" dur="1s" fill="freeze" from="0" to="1" begin="anmidt3.end-.5s"></animate>
     </g>
     <g opacity="0">
-      <text x="188" y="184" class="st1 st2 st3">南科半導體聚落</text>
+      <text x="188" y="184" class="st1 st2 st3">南科產值成長全台居冠</text>
       <use xlink:href="#l1" x="168" y="172" />
       <path class="st4" d="M183.6,180.8c0.5,0,0.5-0.7,0-0.7h-0.8v-0.7h0.8c0.5,0,0.5-0.7,0-0.7h-0.8v-0.8h-0.9v-1c0-0.5-0.7-0.5-0.7,0v1
   		h-0.7v-1c0-0.5-0.7-0.5-0.7,0v1H179v-1c0-0.5-0.7-0.5-0.7,0v1h-0.7v-1c0-0.5-0.7-0.5-0.7,0v1H176v0.8h-1c-0.5,0-0.5,0.7,0,0.7h1v0.7
@@ -231,7 +231,7 @@ onMounted(() => {
 }
 
 .st3 {
-  font-size: 9px;
+  font-size: 8px;
   font-weight: Bold;
 }
 

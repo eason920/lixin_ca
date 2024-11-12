@@ -267,7 +267,7 @@ onMounted(() => {
 }
 
 .st3 {
-  font-size: 9px;
+  font-size: 8px;
   font-weight: Bold;
 }
 
